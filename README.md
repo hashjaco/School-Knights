@@ -1,2 +1,2 @@
 # csc642-team9-UIX
-This is an original web/mobile application that is mainly focused on UI/UX.
+This is a mobile application that provides escort services around campus...security escorts to be specific.

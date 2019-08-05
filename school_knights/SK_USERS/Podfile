@@ -1,0 +1,5 @@
+platform :ios, '12.0'
+target 'SK_USERS' do
+pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+pod 'GoogleMaps'
+end

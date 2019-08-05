@@ -1,7 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6914e37d-370b-44e5-8e52-8d9ea2d9cfbe" name="Default Changelist" comment="" />
+    <list default="true" id="6914e37d-370b-44e5-8e52-8d9ea2d9cfbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/.watchmanconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/containers/Map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.expo-shared/assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.watchmanconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/Map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/Menu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/RecentAddress/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/Register/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Background/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/ControlSection/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Form/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/MapSection/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Menu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/views/FAQ/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/views/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/views/Main/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/components/Emergency/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/components/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/components/Map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/components/Menu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/components/RecentAddress/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/components/Register/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/containers/Background/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/containers/Form/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/containers/Header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/containers/Location/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/containers/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/containers/Map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/containers/Menu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/containers/Profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/views/FAQ/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/views/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/Users-WEB/views/Main/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/components/Emergency/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/components/Emergency/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/components/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/components/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/components/Map/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/components/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/components/Menu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/components/RecentAddress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/components/RecentAddress/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/components/Register/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/containers/Background/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/containers/Background/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/containers/Form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/containers/Form/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/containers/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/containers/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/containers/Location/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/containers/Location/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/containers/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/containers/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/containers/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/containers/Map/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/containers/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/containers/Menu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/containers/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/containers/Profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/views/FAQ/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/views/FAQ/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/views/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Knights/views/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Knights-WEB/views/Main/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Users-WEB/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Users-WEB/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Users-WEB/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/components/Emergency/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/components/Emergency/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/components/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/components/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/components/Map/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/components/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/components/Menu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/components/RecentAddress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/components/RecentAddress/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/components/Register/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/containers/Background/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/containers/Background/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/containers/Form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/containers/Form/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/containers/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/containers/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/containers/Location/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/containers/Location/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/containers/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/containers/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/containers/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/containers/Menu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/containers/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/containers/Profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/containers/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Users-WEB/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Users-WEB/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Users-WEB/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/views/FAQ/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/Users-WEB/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/views/FAQ/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/views/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_KNIGHTS/views/Main/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/Users/views/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/Emergency/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/yarn.lock" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -11,12 +120,106 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/containers/MapSection/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/components/Map/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/containers/ControlSection/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/Podfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/school_knights/Users/containers/Map/index.js" />
+        <option value="$PROJECT_DIR$/school_knights/package.json" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/containers/Map/index.js" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/containers/MapContainer/index.js" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/Podfile" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/containers/MapSection/index.js" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/src/components/Map/index.js" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/src/App.js" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/node_modules/expo/AppEntry.js" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/App.js" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/components/Map/index.js" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/containers/ControlSection/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -34,13 +237,28 @@
             <path>
               <item name="PiggyBack" type="b2602c69:ProjectViewProjectNode" />
               <item name="PiggyBack" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
+              <item name="school_knights" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PiggyBack" type="b2602c69:ProjectViewProjectNode" />
               <item name="PiggyBack" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-              <item name="hashim_web_form" type="462c0819:PsiDirectoryNode" />
+              <item name="school_knights" type="462c0819:PsiDirectoryNode" />
+              <item name="SK_USERS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PiggyBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PiggyBack" type="462c0819:PsiDirectoryNode" />
+              <item name="school_knights" type="462c0819:PsiDirectoryNode" />
+              <item name="SK_USERS" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PiggyBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PiggyBack" type="462c0819:PsiDirectoryNode" />
+              <item name="school_knights" type="462c0819:PsiDirectoryNode" />
+              <item name="SK_USERS" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="ControlSection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -49,10 +267,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/school_knights/SK_KNIGHTS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/school_knights/SK_USERS/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/school_knights/SK_USERS" />
+      <recent name="$PROJECT_DIR$/school_knights/SK_USERS/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/school_knights/SK_KNIGHTS" />
+      <recent name="$PROJECT_DIR$/school_knights/SK_USERS" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,24 +314,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="767000" />
+    <option name="totallyTimeSpent" value="13909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="DB Browser" />
-      <window_info id="Project Explorer" />
-      <window_info id="Job Explorer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21387696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17167382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Console" />
-      <window_info anchor="bottom" id="DB Execution Console" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3110285" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Project Explorer" order="2" />
+      <window_info id="DB Browser" order="3" />
+      <window_info id="Job Explorer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -106,13 +333,113 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Console" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.32713756" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.32713756" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/school_knights/Users-WEB/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/Users-WEB/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/Users-WEB/containers/Map/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/node_modules/expo/AppEntry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/containers/MapSection/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/components/Map/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/containers/ControlSection/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

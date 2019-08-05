@@ -9,3 +9,12 @@ npm-debug.*
 *.orig.*
 web-build/
 web-report/
+
+package-lock.json
+yarn.lock
+Podfile
+ios/
+android/
+src/
+
+.gitignore

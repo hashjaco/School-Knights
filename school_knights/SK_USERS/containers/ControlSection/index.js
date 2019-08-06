@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { View, StyleSheet } from "react-native";
 import { Button, Container, Spinner } from "native-base";
 import { Input } from "react-native-elements";
+import InputField from '../../containers/InputField'
+
 
 export default class ControlSection extends Component {
   constructor(props) {
@@ -16,20 +18,29 @@ export default class ControlSection extends Component {
   }
 
   render() {
-    return <View style={styles.container}></View>;
+    return <View style={styles.container}>
+      <InputField style={styles.locationField}/>
+    </View>;
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
-    display: 'flex',
-    height: '20%',
+    flex: 1,
+    flexDirection: 'column',
+    height: '25%',
     width: '100%',
-    backgroundColor: '#fff',
+    backgroundColor: '#FCFCFC',
     borderColor: '#000',
     borderWidth: 1,
     borderRadius: 10,
-    bottom: 0
+    bottom: 0,
+    alignItems: 'center',
+  },
+
+  locationField: {
+    position: 'absolute',
   }
+
 });

@@ -17,4 +17,6 @@ ios/
 android/
 src/
 
+../../.idea/workspace.xml
+
 .gitignore

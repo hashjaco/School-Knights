@@ -3,6 +3,9 @@ import { StyleSheet, Text, View } from "react-native";
 import MapSection from "./containers/MapSection";
 import ControlSection from "./containers/ControlSection";
 import { AppLoading } from "expo";
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import reducers from './redux/reducers'
 
 export default class App extends Component {
   constructor(props) {
@@ -25,12 +28,13 @@ export default class App extends Component {
     }
 
     return (
-
       // TODO: Replace code below with react router implementation. Routes should be stored in ./routes
-      <View style={styles.container}>
-        <MapSection />
-        <ControlSection />
-      </View>
+      <Provider store={createStore(reducers)}>
+        <View style={styles.container}>
+          <MapSection />
+          <ControlSection />
+        </View>
+      </Provider>
     );
   }
 }
@@ -40,6 +44,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "center"
   }
 });

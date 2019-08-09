@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigator } from "react-native";
+import { Router, Scene } from 'react-native-router-flux'
 
 import Login from "../screens/Login";
 import Main from "../screens/Main";

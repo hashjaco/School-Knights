@@ -1,11 +1,15 @@
-import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
-import MapSection from "./containers/MapSection";
-import ControlSection from "./containers/ControlSection";
+import React, { Component } from 'react';
+import {
+  StatusBarIOS,
+  TouchableWithoutFeedback,
+  StyleSheet,
+  Text,
+  View
+} from "react-native";import MapSection from './containers/MapSection'
+import ControlSection from './containers/ControlSection';
 import { AppLoading } from "expo";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
-import reducers from './redux/reducers'
+import { createStackNavigator, createAppContainer } from "react-navigation";
 
 export default class App extends Component {
   constructor(props) {
@@ -24,15 +28,14 @@ export default class App extends Component {
     // TODO: Replace current code with Routes
 
     if (!this.state.isReady) {
-      return <AppLoading />;
+      return <AppLoading/>;
     }
-
     return (
-      // TODO: Replace code below with react router implementation. Routes should be stored in ./routes
-      <Provider store={createStore(reducers)}>
+      <Provider>
         <View style={styles.container}>
-          <MapSection />
-          <ControlSection />
+          <StatusBarIOS backgroundColor="#1e90ff" barStyle="light-content"/>
+          <MapSection/>
+          <ControlSection/>
         </View>
       </Provider>
     );
@@ -42,8 +45,8 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

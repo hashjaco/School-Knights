@@ -1,6 +1,6 @@
 // A reducer is a function that returns some data
 // Example cont'd: If the action's type is 'split', take the string of characters and turn it into an array.
-// array will be passed to the application store as state
+// array will be passed to the application index as state
 
 import { combineReducers } from "redux";
 import FormReducer from "./FormReducer";

@@ -3,6 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import MapSection from './containers/MapSection'
 import ControlSection from './containers/ControlSection';
 import Login from './containers/Login';
+import Register from './containers/Form';
+import Profile from './containers/Profile';
+
+
 
 export default function App() {
   return (
@@ -11,9 +15,11 @@ export default function App() {
       {/*
       <MapSection/>
       <ControlSection/>
-      
-      */}
       <Login />
+      <Register/>
+      */}
+      <Login/>
+      
 
     </View>
   );

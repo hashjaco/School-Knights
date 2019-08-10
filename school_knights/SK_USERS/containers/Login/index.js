@@ -8,132 +8,163 @@ import {
     TouchableOpacity,
     AsyncStorage,
 } from 'react-native';
- 
+
 
 
 export default class login extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state  = {
+        this.state = {
             username: '',
             password: '',
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this._loadInitialState().done();
     }
-_loadInitialState = async () => {
-   
-    var value = await AsyncStorage.getItem('user');
-    if (value !== null){
-        this.props.navigation.navigate('profile');
+    _loadInitialState = async () => {
 
+        var value = await AsyncStorage.getItem('user');
+        if (value !== null) {
+            this.props.navigation.navigate('profile');
+
+        }
     }
-}
 
-    render(){
-        return(
-            
-<KeyboardAvoidingView behavior='padding' style={styles.wrapper}>
+    render() {
+        return (
 
-<View style={styles.topContainer}>
-   
-    <Text  style={styles.header}>Login
-            </Text>
-</View>
+            <KeyboardAvoidingView behavior='padding' style={styles.wrapper}>
 
-<View style={styles.bottomContainer}>
-<View style={styles.formContainer}>
-        
+                <View style={styles.topContainer}>
+
+                    <Text style={styles.header}>Login </Text>
 
 
-        
-        <TextInput
-            style= {styles.TextInput} placeholder ='username'
-            onChangeText={(username) => this.setState({username})  }
+                </View>
 
-         >
-        </TextInput>
+                <View style={styles.bottomContainer}>
+                    <View style={styles.formContainer}>
 
 
-        <TextInput
-            style= {styles.TextInput} placeholder ='password'
-            onChangeText={(password) => this.setState({password})  }
 
-         >
-        </TextInput>
 
-        <TouchableOpacity
-        style = {styles.btn}
-        onPress= {this.login}>
-            <Text style={styles.text}>Log In</Text>
+                        <TextInput
+                            style={styles.TextInput} placeholder='username'
+                            onChangeText={(username) => this.setState({ username })}
 
-</TouchableOpacity>
+                        >
+                        </TextInput>
 
-<Text
-         style={styles.bottomText}>Need an Account? 
-        </Text>
-        <Text
-         style={styles.bottomText}>Want to become a Knight?? 
-        </Text>
 
-</View>
-</View>
-   
-   
-  
+                        <TextInput
+                            style={styles.TextInput} placeholder='password'
+                            onChangeText={(password) => this.setState({ password })}
 
-   
+                        >
+                        </TextInput>
 
-   
-    </KeyboardAvoidingView>
+                        <TouchableOpacity
+                            style={styles.btn}
+                            onPress={this.login}>
+                            <Text style={styles.text}>Log In</Text>
 
-            
+                        </TouchableOpacity>
+
+
+                        <View style={styles.registerAndButton}>
+
+                            <Text style={fontSize = 12}>Need an Account?</Text>
+
+                            <TouchableOpacity
+                                style={styles.regBtn}
+                                onPress={this.login}>
+                                <Text style={styles.text}>Register</Text>
+
+                            </TouchableOpacity>
+
+                        </View>
+
+
+                        <View style={styles.registerAndButton}>
+
+                            <Text style={fontSize = 12}>Join our KnightHood?</Text>
+
+                            <TouchableOpacity
+                                style={styles.regBtn}
+                                onPress={this.login}>
+                                <Text style={styles.text}>Learn More</Text>
+
+                            </TouchableOpacity>
+
+                        </View>
+
+
+
+                    </View  >
+
+                </View>
+
+
+
+
+
+
+
+
+
+
+            </KeyboardAvoidingView>
+
+
         );
-            
+
     }
 
-   
+
 }
 
 const styles = StyleSheet.create({
-    wrapper:{
-        flex:1,
+    wrapper: {
+        flex: 1,
     },
-topContainer:{
-    width: 450,
-    height: 200,
-    backgroundColor:  '#512FDB'
-}
+    topContainer: {
+        width: 450,
+        height: 150,
+        backgroundColor: '#512FDB',
+        alignItems: 'flex-start'
+
+    }
+
+
     ,
 
-    formContainer:{
-        
-        alignItems:'center',
-        justifyContent:'center',
-        width: 330,
+    formContainer: {
+        flexWrap: 'wrap',
+        paddingTop: 40,
+        width: 300,
         height: 500,
         borderWidth: 1,
-        borderColor: 'black'  
+        borderColor: 'black',
+        alignSelf: 'center'
+
     },
 
-    bottomContainer:{
+    bottomContainer: {
         width: 400,
         height: 650,
-        backgroundColor:  'white',
-        alignItems: 'stretch'
-
+        backgroundColor: 'white',
+        alignSelf: 'center',
     },
 
     header: {
-        fontSize: 24,
-        marginBottom: 60,
-        color: 'black', 
-        fontWeight:'bold',
-        paddingLeft: 150,
-        paddingTop: 100
+
+        color: 'white',
+        fontWeight: 'bold',
+        padding: 75,
+        fontSize: 35,
 
     },
 
@@ -143,28 +174,58 @@ topContainer:{
         marginBottom: 20,
         borderRadius: 100,
         borderWidth: 1
-        
+
     },
 
     btn: {
         alignSelf: 'stretch',
-    backgroundColor:  '#512FDB',
+        backgroundColor: '#512FDB',
         padding: 20,
         alignItems: 'center',
         borderRadius: 100,
         borderWidth: 1
     },
 
-    text:{
-        color:'white'
-        },
+    registerAndButton: {
+        flexDirection: 'row',
+        padding: 5,
+        alignItems: 'center',
+        justifyContent: 'flex-start'
+    },
+
+    regBtn: {
+
+        backgroundColor: '#512FDB',
+        alignSelf: 'flex-end',
+        backgroundColor: '#512FDB',
+        padding: 5,
+        alignItems: 'center',
+        borderRadius: 50,
+        borderWidth: 1
+
+    },
+
+    text: {
+
+
+
+        color: 'white'
+    },
+
+
+
 
     bottomText: {
+        textAlignVertical: 'center',
         fontSize: 14,
-        color: 'black', 
-        fontWeight:'bold',
-        alignItems: 'baseline'
-    }
+        color: 'black',
+        fontWeight: 'bold',
+
+    },
+
+
+
+
 
 
 

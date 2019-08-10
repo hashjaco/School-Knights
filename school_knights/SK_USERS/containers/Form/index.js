@@ -149,6 +149,7 @@ topContainer:{
         width: 300,
         height: 600,
         borderWidth: 1,
+        borderRadius: 10,
         borderColor: 'black' ,
         alignSelf: 'center'
 

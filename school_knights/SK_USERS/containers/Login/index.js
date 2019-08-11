@@ -68,7 +68,7 @@ export default class login extends React.Component {
 
                         <TouchableOpacity
                             style={styles.btn}
-                            onPress={this.login}>
+                        >
                             <Text style={styles.text}>Log In</Text>
 
                         </TouchableOpacity>
@@ -80,7 +80,7 @@ export default class login extends React.Component {
 
                             <TouchableOpacity
                                 style={styles.regBtn}
-                                onPress={this.login}>
+                            >
                                 <Text style={styles.text}>Register</Text>
 
                             </TouchableOpacity>
@@ -94,7 +94,7 @@ export default class login extends React.Component {
 
                             <TouchableOpacity
                                 style={styles.regBtn}
-                                onPress={this.login}>
+                            >
                                 <Text style={styles.text}>Learn More</Text>
 
                             </TouchableOpacity>
@@ -121,9 +121,45 @@ export default class login extends React.Component {
 
         );
 
+
+    }
+login = () => {
+    fetch('http://192.168.1.67:19000/users',{
+    method: 'POST',   
+    headers: {
+        'Accept': 'application/json', 
+        'Content-Type': 'application/json', 
+
+    },
+    body: JSON.stringify({
+        username: this.state.username,
+        password: this.state.password,
+
+
+    })
+
+    .then((response) => response.json())
+    .then((res) => {
+        if (res.success ===true ){
+            AsyncStorage.setItem('user', res.user);
+            this.props.navigate('Profile');
+
+        }
+        else {
+            alert(res.message);
+        }
+        
+    })
+    
+   
+ 
     }
 
 
+
+    )
+    .done();
+}
 }
 
 const styles = StyleSheet.create({

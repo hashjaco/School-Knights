@@ -11,6 +11,7 @@ import {
     Image
 } from 'react-native';
 import { Container } from 'native-base';
+import { ScrollView } from 'react-native-gesture-handler';
 
 
 
@@ -38,16 +39,63 @@ export default class Profile extends React.Component {
 
                     <View style={styles.middleContainer}>
 
-                        <View style={styles.tripsContainer}>
-                            <Text>Number of Trips:</Text>
-                            <Text>     #of Trips</Text>
-                        </View>
+
+
+
+                        <ScrollView style={styles.Scroll}>
+                            <TouchableOpacity style={styles.btn}>
+                                <Text>First Name:</Text>
+                            </TouchableOpacity>
+
+                            <TouchableOpacity style={styles.btn}>
+                                <Text>Last Name:</Text>
+                            </TouchableOpacity>
+
+                            <TouchableOpacity style={styles.btn}>
+                                <Text>Email:</Text>
+                            </TouchableOpacity>
+
+                            <TouchableOpacity style={styles.btn}>
+                                <Text>Phone Number:</Text>
+                            </TouchableOpacity>
+
+                            <TouchableOpacity style={styles.btn}>
+                                <Text>Password:</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={styles.btn}>
+                                <Text>Your trips:</Text>
+                            </TouchableOpacity>
+
+                            <TouchableOpacity style={styles.btn}>
+                                <Text>Paymment Methods:</Text>
+                            </TouchableOpacity>
+
+                            <TouchableOpacity style={styles.btn}>
+                                <Text>Help:</Text>
+                            </TouchableOpacity>
+
+                        </ScrollView>
 
                     </View>
 
+
+                    <View>
+                        <Text></Text>
+                        <TouchableOpacity style={styles.updateButton}>
+                            <Text style={styles.nameText}>Update Profile  </Text>
+                        </TouchableOpacity>
+                        <Text></Text>
+                        <TouchableOpacity style={styles.updateButton}>
+                            <Text style={styles.nameText}>Register as a Knight</Text>
+                        </TouchableOpacity>
+
+                    </View>
+
+
+
+
                 </View>
 
-            
 
 
 
@@ -74,13 +122,12 @@ const styles = StyleSheet.create({
         height: 400,
         backgroundColor: '#512FDB',
         alignItems: 'center',
-
-
     },
 
     middleContainer: {
+        
         width: 275,
-        height: 450,
+        height: 320,
         backgroundColor: 'white',
         borderStyle: 'solid',
         borderColor: 'black',
@@ -89,10 +136,8 @@ const styles = StyleSheet.create({
     },
 
     bottomContainer: {
-        paddingTop: 150,
-        position: 'absolute',
-        width: 375,
-        height: 400,
+
+        
         backgroundColor: 'gray',
         alignItems: 'center',
 
@@ -139,6 +184,47 @@ const styles = StyleSheet.create({
         color: 'black',
         paddingTop: 5,
         paddingRight: 5
+    },
+
+    Scroll: {
+
+        width: 300,
+        height: 150
+
+    },
+    btn: {
+        flex: 3,
+        backgroundColor: 'white',
+        height: 40,
+        borderRadius: 50,
+        borderWidth: 1,
+        alignItems: 'stretch',
+        borderRadius: 10,
+        width: 275,
+        paddingLeft: 10,
+        paddingTop: 10
+    },
+
+    updateButton: {
+
+        paddingTop: 10,
+        backgroundColor: 'white',
+
+        borderRadius: 50,
+        borderWidth: 1,
+        alignItems: 'stretch',
+        borderRadius: 10,
+        backgroundColor: '#512FDB',
+        padding: 5,
+        alignItems: 'center',
+        borderRadius: 50,
+        borderWidth: 1
+
+    },
+
+    emptyView: {
+
+        backgroundColor: 'black'
     }
 
 

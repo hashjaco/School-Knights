@@ -18,7 +18,7 @@ export default function App() {
       <Login />
       <Register/>
       */}
-      <Register/>
+      <Profile/>
       
 
     </View>

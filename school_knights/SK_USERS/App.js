@@ -8,6 +8,7 @@ import Profile from './containers/Profile';
 
 
 
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -16,9 +17,13 @@ export default function App() {
       <MapSection/>
       <ControlSection/>
       <Login />
-      <Register/>
+   
       */}
-      <Profile/>
+
+         <Register/>
+    
+
+      
       
 
     </View>

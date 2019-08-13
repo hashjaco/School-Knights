@@ -1,39 +1,30 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import MapSection from './containers/MapSection'
+import MapSection from './containers/MapSection';
 import ControlSection from './containers/ControlSection';
-import Login from './containers/Login';
-import Register from './containers/Form';
-import Profile from './containers/Profile';
+import DrawerNavigator from './components/DrawerNavigator/DrawerNavigator';
 
 
 
-
-export default function App() {
+export default class App extends React.Component {
+  render() {
   return (
-    <View style={styles.container}>
-
-      {/*
-      <MapSection/>
-      <ControlSection/>
-      <Login />
-   
-      */}
-
-         <Register/>
     
-
-      
-      
-
+    <View style={styles.container}>
+      <DrawerNavigator/>
+     {/*} <MapSection />
+      <ControlSection /> */}
     </View>
+   
   );
 }
+}
+
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    justifyContent: 'center',
   },
 });

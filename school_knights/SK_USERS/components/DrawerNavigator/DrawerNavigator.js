@@ -3,19 +3,21 @@ import { Text, View, Image, StyleSheet, Button } from "react-native";
 import { Icon } from "react-native-elements";
 import { DrawerNavigator } from "react-navigation";
 import { Left } from "native-base";
+import FAQ from "./FAQScreen";
+import Apply from "./ApplyScreen";
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
-    style: {color: '#4C3E54'},
+    style: { color: '#4C3E54' },
     drawerLabel: "Home",
-    
+
   };
 
   render() {
     return (
       <View style={{ flex: 1, justifyContent: "top", alignItems: "left", marginTop: 20, marginLeft: 3 }}>
         <Icon
-          
+
           reverse
           name="ios-menu"
           type="ionicon"
@@ -33,7 +35,7 @@ class HomeScreen extends React.Component {
 class AccountInformationScreen extends React.Component {
   static navigationOptions = {
     drawerLabel: "Account Information",
-    
+
   };
 
   render() {
@@ -56,7 +58,7 @@ class AccountInformationScreen extends React.Component {
 class ListOfKnightsScreen extends React.Component {
   static navigationOptions = {
     drawerLabel: "List of all Knights",
-    
+
   };
 
   render() {
@@ -83,16 +85,18 @@ class FAQScreen extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1, justifyContent: "top", alignItems: "left", marginTop: 20, marginLeft: 3 }}>
+      <View style={styles.container}>
         <Icon
           reverse
           name="ios-menu"
           type="ionicon"
           color="lightgrey"
+          backgroundColor="purple"
           onPress={() => this.props.navigation.navigate("DrawerOpen")}
           title="DrawerOpen"
         />
-        <Text style={[styles.pagecontent]}>This is the FAQ Page</Text>
+        <FAQ />
+
       </View>
     );
   }
@@ -101,21 +105,24 @@ class FAQScreen extends React.Component {
 class ApplyScreen extends React.Component {
   static navigationOptions = {
     drawerLabel: "Apply as Security Escort"
-    
+
   };
 
   render() {
     return (
-      <View style={{ flex: 1, justifyContent: "top", alignItems: "left", marginTop: 20, marginLeft: 3 }}>
+      <View style={styles.container}>
         <Icon
           reverse
           name="ios-menu"
           type="ionicon"
           color="lightgrey"
+          backgroundColor="purple"
           onPress={() => this.props.navigation.navigate("DrawerOpen")}
           title="DrawerOpen"
         />
-        <Text style={[styles.pagecontent]}>This is the Apply Page</Text>
+        <Apply />
+
+
       </View>
     );
   }
@@ -124,7 +131,7 @@ class ApplyScreen extends React.Component {
 class LogoutScreen extends React.Component {
   static navigationOptions = {
     drawerLabel: "Logout"
-    
+
   };
 
   render() {
@@ -148,7 +155,31 @@ const styles = StyleSheet.create({
   pagecontent: {
     justifyContent: "center",
     alignItems: "center",
+  },
+  container: {
+    flex: 1,
+    backgroundColor: 'purple',
+  },
+  top: {
+    height: '45%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'purple',
+  },
+  profileimage: {
+    width: 140,
+    height: 140,
+    borderRadius: 100,
+    borderWidth: 4,
+    borderColor: '#fff',
+    backgroundColor: '#eee',
 
+  },
+  faq: {
+    flex: 3,
+    shadowOffset: { width: 5, height: 5, },
+    shadowColor: 'black',
+    shadowOpacity: 0.5,
   }
 });
 
@@ -180,7 +211,7 @@ export default DrawerNavigator(
   {
     drawerPosition: "left",
     initialRouteName: "Home",
-   // drawerBackgroundColor: "purple",
-       drawerWidth: 250
+    // drawerBackgroundColor: "purple",
+    drawerWidth: 250
   }
 );

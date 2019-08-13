@@ -2,57 +2,48 @@ import React, { Component } from "react";
 import { LocationField, DestinationField } from "../../components/InputFields";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import * as Actions from "../../redux/actions";
 import {
-  View,
-  StyleSheet,
-  TouchableOpacity
-} from "react-native";
+  setActive,
+  setDestination,
+  setLocation,
+  changeFieldColors,
+  resetFieldColors
+} from "../../redux/actions";
+import { View, StyleSheet, TouchableOpacity } from "react-native";
 
 class InputField extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      inputFieldBgColor: "#8E3B9B",
-      inputTextColor: "#C9B132",
-      destinationSet: false,
-      locationSet: false,
-      isActive: false
-    };
-  }
-
-  onPress = () => {
-    this.setState({
-      inputFieldBgColor: "#fff",
-      inputTextColor: "#000"
-    });
-  };
-
   render() {
     return (
-      <View style={styles.fieldStyle}>
-        <TouchableOpacity>
-          {this.state.locationSet === false ? (
+      <TouchableOpacity>
+        <View style={styles.fieldStyle}>
+          {this.props.destinationSet === false ? (
             <DestinationField />
           ) : (
             <LocationField />
           )}
-        </TouchableOpacity>
-      </View>
+        </View>
+      </TouchableOpacity>
     );
   }
 }
 
 const mapStateToProps = state => {
   return {
-    fillColor: state.fillColor,
-    fontColor: state.fontColor
-  }
+    ...state
+  };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators(Actions, dispatch);
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(
+    {
+      setActive,
+      setLocation,
+      setDestination,
+      changeFieldColors,
+      resetFieldColors
+    },
+    dispatch
+  );
 };
 
 const styles = StyleSheet.create({

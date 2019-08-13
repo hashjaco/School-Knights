@@ -15,7 +15,8 @@ import {
   CONFIRM_TRIP,
   MATCH_FOUND,
   WAIT_FOR_MATCH,
-  SCHEDULE_TRIP
+  SCHEDULE_TRIP,
+  CHANGE_FIELD_COLORS, SLIDE_UP, SLIDE_DOWN
 } from "./actionTypes";
 //Import sample data
 import History from "../../data/history";

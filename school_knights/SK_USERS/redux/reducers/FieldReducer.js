@@ -3,13 +3,13 @@ import {
   RESET_FIELD_COLORS
 } from "../actions/actionTypes";
 
-let fieldState = {
+let initialState = {
   fillColor: "#8E3B9B",
   fontColor: "#C9B132",
   isActive: false
 };
 
-const fieldReducer = (state = fieldState, action) => {
+const fieldReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_FIELD_COLORS:
       state = {

@@ -22,14 +22,11 @@ export default class Map extends Component {
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(
       position => {
-        console.log("oh em gee, i'm about to work");
-        console.log(position);
-
         this.setState({
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
           error: null,
-          showsUserLocation: false
+          showsUserLocation: true
         });
       },
       error =>

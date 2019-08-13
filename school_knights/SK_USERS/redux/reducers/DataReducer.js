@@ -4,7 +4,7 @@ import history from "../../data/history.json";
 
 
 // TODO: Will need to modify initialState
-const initialState = {
+let initialState = {
   history: [
     {
       id: "0",
@@ -29,7 +29,7 @@ const dataReducer = (state = initialState, action) => {
     case DATA_AVAILABLE:
       return {
         ...state,
-        history: action.history,
+        history: action.data,
         loading: false
       };
     default:

@@ -16,25 +16,20 @@ import { connect } from "react-redux";
 
 class History extends Component {
   render() {
-    store.subscribe(()=>{
-
-    })
-
       return (
         <View style={styles.fieldStyle}>
           <FlatList
-            ref="listRef"
-            renderItem={this._renderItem}
+            data={this.props.history}
+            renderItem={this.renderItem}
             horizontal={true}
           >
-            {historyList}
           </FlatList>
         </View>
       );
   }
 
-  _renderItem = ({ item }) => {
-    // let image = require(item.imageSource);
+  renderItem = ({item}) => {
+    // let image = data.imageSource;
     return (
       <TouchableOpacity>
         {/*<Image style={styles.image} source={image} />*/}
@@ -52,7 +47,7 @@ class History extends Component {
 // This function makes Redux know that this component needs to be passed a piece of the state
 const mapStateToProps = state => {
   return {
-    history: state.history
+    ...state
   }
 };
 

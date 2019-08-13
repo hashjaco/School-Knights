@@ -1,31 +1,32 @@
 import React, { Component } from "react";
-import {
-  StyleSheet
-} from "react-native";
-import thunk from 'redux-thunk'
+import { StyleSheet } from "react-native";
+import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
-import Routes from "./Routes";
+import { Routes } from "./Routes";
 import { createAppContainer } from "react-navigation";
-// import store from './redux/store'
 import reducers from "./redux/reducers";
-
+import { useScreens } from "react-native-screens";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
-
-    this.store = createStore(reducers, applyMiddleware(thunk))
+    this.store = createStore(reducers, applyMiddleware(thunk));
   }
 
   AppContainer = createAppContainer(Routes);
 
   async componentDidMount() {
     this.setState({ isReady: true });
+    useScreens();
   }
 
   render() {
-    return <Provider store={this.store}><this.AppContainer /></Provider>
+    return (
+      <Provider store={this.store}>
+        <this.AppContainer />
+      </Provider>
+    );
   }
 }
 

@@ -1,6 +1,6 @@
 // Names for actions that will change the state of the components. The reducers, or functions that perform the actions defined below, will use these strings in a switch statement to determine how the state is being modified.
 
-export const CHANGE_FIELD_COLORS = "CHANGE_FILL_COLOR";
+export const CHANGE_FIELD_COLORS = "CHANGE_FIELD_COLORS";
 
 export const RESET_FIELD_COLORS = "RESET_FIELD_COLORS";
 
@@ -37,3 +37,5 @@ export const SCHEDULE_TRIP = "SCHEDULE_TRIP";
 export const CONFIRM_TRIP = "CONFIRM_TRIP";
 
 export const WAIT_FOR_MATCH = "WAIT_FOR_MATCH";
+
+export const CONFIRM_EMERGENCY = "CONFIRM_EMERGENCY"

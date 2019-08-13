@@ -10,29 +10,37 @@ let initialState = {
   location: "",
   destination: "",
   pickUpTime: null,
-  isWaiting: false
+  isWaiting: false,
+  destinationSet: false,
+  locationSet: false
 };
 
 const tripReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_DESTINATION:
+      this.setState({
+        destinationSet: true
+      });
       return Object.assign({}, state, {
-        destination: action.destination
+        destination: action.data
       });
 
     case SET_PICKUP_TIME:
       return Object.assign({}, state, {
-        pickUpTime: action.pickUpTime
+        pickUpTime: action.data
       });
 
     case SET_WAITING:
       return Object.assign({}, state, {
-        isWaiting: action.isWaiting
+        isWaiting: action.data
       });
 
     case SET_LOCATION:
+      this.setState({
+        locationSet: true
+      });
       return Object.assign({}, state, {
-        location: action.location
+        location: action.data
       });
 
     default:

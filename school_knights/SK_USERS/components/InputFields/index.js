@@ -1,23 +1,37 @@
 import React from "react";
-import { TextInput } from "react-native";
+import { TextInput, TouchableOpacity } from "react-native";
 
 const DestinationField = () => {
   const inputTextColor = "#000";
-  const inputStyle = {
-    fontWeight: "600",
-    fontSize: 36,
-    marginBottom: 0,
-    letterSpacing: 3,
-    marginLeft: 15
+  const styles = {
+    inputStyle: {
+      fontWeight: "600",
+      fontSize: 36,
+      marginBottom: 0,
+      letterSpacing: 3,
+      marginLeft: 15
+    },
+    span: {
+      rotationDegrees: 90,
+      borderWidth: 1
+    },
+    scheduleButton: {
+
+    }
   };
 
   return (
-    <TextInput
-      style={inputStyle}
-      color={inputTextColor}
-      placeholder="Where to?"
-      placeholderTextColor="#C9B132"
-    />
+    <TouchableOpacity>
+      <TextInput
+        style={styles.inputStyle}
+        color={inputTextColor}
+        placeholder="Where to?"
+        placeholderTextColor="#C9B132"
+      >
+        <View><span /></View>
+
+      </TextInput>
+    </TouchableOpacity>
   );
 };
 
@@ -32,12 +46,14 @@ const LocationField = () => {
   };
 
   return (
-    <TextInput
-      style={inputStyle}
-      color={inputTextColor}
-      placeholder="Where from?"
-      placeholderTextColor="#C9B132"
-    />
+    <TouchableOpacity>
+      <TextInput
+        style={inputStyle}
+        color={inputTextColor}
+        placeholder="Where from?"
+        placeholderTextColor="#C9B132"
+      />
+    </TouchableOpacity>
   );
 };
 

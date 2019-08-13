@@ -1,5 +1,4 @@
 import React from "react";
-import { Router, Scene } from "react-native-router-flux";
 import Login from "./screens/Login";
 import Main from "./screens/Main";
 import FAQ from "./screens/FAQ";
@@ -8,28 +7,47 @@ import Register from "./screens/Register";
 
 import { createStackNavigator } from "react-navigation";
 
-const Routes = createStackNavigator(
+export const Routes = createStackNavigator(
   {
-    Login: { screen: Login,
+    Login: {
+      screen: Login,
       navigationOptions: ({ navigation }) => ({
-        headerTitle: null,
-      }) },
-    Main: { screen: Main,
+        headerTitle: null
+      })
+    },
+    Main: {
+      screen: Main,
       navigationOptions: ({ navigation }) => ({
         header: null
-      }) },
+      })
+    },
     FAQ: { screen: FAQ },
-    Register: { screen: Register,
+    Register: {
+      screen: Register,
       navigationOptions: ({ navigation }) => ({
         header: null
-      }) },
+      })
+    },
     Profile: { screen: Profile }
   },
   {
-    initialRouteName: "Login",
+    initialRouteName: "Login"
     // headerMode: "none"
   }
 );
+
+const persistenceKey = "persistenceKey";
+export const persistNavigationState = async navState => {
+  try {
+    await AsyncStorage.setItem(persistenceKey, JSON.stringify(navState));
+  } catch (err) {
+    // handle the error according to your needs
+  }
+};
+export const loadNavigationState = async () => {
+  const jsonString = await AsyncStorage.getItem(persistenceKey);
+  return JSON.parse(jsonString);
+};
 
 // const Routes = () => (
 //   <Router>
@@ -42,5 +60,3 @@ const Routes = createStackNavigator(
 //     </Scene>
 //   </Router>
 // );
-
-export default Routes;

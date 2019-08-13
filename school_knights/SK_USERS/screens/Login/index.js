@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Button, Text, TouchableOpacity } from "react-native";
-import { Actions } from "react-native-router-flux";
+import { Button, TouchableOpacity } from "react-native";
 
 export default class Login extends Component {
   goToMainScreen = () => {

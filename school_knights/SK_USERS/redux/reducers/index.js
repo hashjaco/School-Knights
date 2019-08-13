@@ -8,6 +8,7 @@ import userReducer from "./UserReducer";
 import tripReducer from "./TripReducer";
 import dataReducer from "./DataReducer";
 import controlsReducer from "./ControlFieldReducer";
+import fieldReducer from "./InputFieldReducer"
 
 const reducers = () => {combineReducers({
   forms: FormReducer,
@@ -15,6 +16,7 @@ const reducers = () => {combineReducers({
   trips: tripReducer,
   data: dataReducer,
   controls: controlsReducer,
+  inputFields: fieldReducer
 })};
 
 export default reducers;

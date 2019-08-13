@@ -6,7 +6,7 @@ import FAQ from "./screens/FAQ";
 import Profile from "./screens/Profile";
 import Register from "./screens/Register";
 
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 
 const Routes = createStackNavigator(
   {

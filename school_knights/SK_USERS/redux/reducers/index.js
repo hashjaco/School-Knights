@@ -4,13 +4,17 @@
 
 import { combineReducers } from "redux";
 import FormReducer from "./FormReducer";
-import UserReducer from "./UserReducer";
-import TripReducer from "./TripReducer";
+import userReducer from "./UserReducer";
+import tripReducer from "./TripReducer";
+import dataReducer from "./DataReducer";
+import controlsReducer from "./ControlFieldReducer";
 
-const rootReducer = combineReducers({
+const reducers = () => {combineReducers({
   forms: FormReducer,
-  users: UserReducer,
-  trips: TripReducer
-});
+  users: userReducer,
+  trips: tripReducer,
+  data: dataReducer,
+  controls: controlsReducer,
+})};
 
-export default rootReducer;
+export default reducers;

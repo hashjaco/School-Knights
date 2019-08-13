@@ -29,7 +29,7 @@ export default class Map extends Component {
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
           error: null,
-          showsUserLocation: true
+          showsUserLocation: false
         });
       },
       error =>

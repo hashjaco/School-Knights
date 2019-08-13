@@ -1,25 +1,21 @@
 import React, { Component } from "react";
 import {
-  StatusBarIOS,
-  TouchableWithoutFeedback,
-  StyleSheet,
-  Text,
-  View
+  StyleSheet
 } from "react-native";
-import MapSection from "./containers/MapSection";
-import ControlSection from "./containers/ControlSection";
-import { AppLoading } from "expo";
+import thunk from 'redux-thunk'
 import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
 import Routes from "./Routes";
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { createAppContainer } from "react-navigation";
+// import store from './redux/store'
+import reducers from "./redux/reducers";
+
 
 export default class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      isReady: false
-    };
+    this.store = createStore(reducers, applyMiddleware(thunk))
   }
 
   AppContainer = createAppContainer(Routes);
@@ -29,11 +25,7 @@ export default class App extends Component {
   }
 
   render() {
-    // TODO: Replace current code with Routes
-    if (!this.state.isReady) {
-      return <AppLoading />;
-    }
-    return <this.AppContainer />;
+    return <Provider store={this.store}><this.AppContainer /></Provider>
   }
 }
 

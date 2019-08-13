@@ -1,16 +1,20 @@
 // A reducer is a function that returns some data
 // Example cont'd: If the action's type is 'split', take the string of characters and turn it into an array.
-// array will be passed to the application store as state
+// array will be passed to the application index as state
 
 import { combineReducers } from "redux";
 import FormReducer from "./FormReducer";
-import UserReducer from "./UserReducer";
-import TripReducer from "./TripReducer";
+import userReducer from "./UserReducer";
+import tripReducer from "./TripReducer";
+import dataReducer from "./DataReducer";
+import controlsReducer from "./ControlFieldReducer";
 
-const rootReducer = combineReducers({
+const reducers = () => {combineReducers({
   forms: FormReducer,
-  users: UserReducer,
-  trips: TripReducer
-});
+  users: userReducer,
+  trips: tripReducer,
+  data: dataReducer,
+  controls: controlsReducer,
+})};
 
-export default rootReducer;
+export default reducers;

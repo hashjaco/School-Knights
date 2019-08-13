@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { LocationField, DestinationField } from "../../components/InputFields";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import * as Actions from "../../redux/actions";
 import {
   View,
   StyleSheet,
-  TouchableOpacity,
-  TouchableHighlight
+  TouchableOpacity
 } from "react-native";
 
-export default class InputField extends Component {
+class InputField extends Component {
   constructor(props) {
     super(props);
 
@@ -30,13 +32,28 @@ export default class InputField extends Component {
   render() {
     return (
       <View style={styles.fieldStyle}>
-        <TouchableHighlight onPress={this.onPress}>
-          { this.state.locationSet === false ? <DestinationField /> : <LocationField /> }
-        </TouchableHighlight>
+        <TouchableOpacity>
+          {this.state.locationSet === false ? (
+            <DestinationField />
+          ) : (
+            <LocationField />
+          )}
+        </TouchableOpacity>
       </View>
     );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    fillColor: state.fillColor,
+    fontColor: state.fontColor
+  }
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators(Actions, dispatch);
+};
 
 const styles = StyleSheet.create({
   fieldStyle: {
@@ -60,3 +77,8 @@ const styles = StyleSheet.create({
     marginLeft: 15
   }
 });
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(InputField);

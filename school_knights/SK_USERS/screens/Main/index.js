@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 import MapSection from "../../containers/MapSection";
 import ControlSection from "../../containers/ControlSection";
-import DrawerNavigator from "../../components/DrawerNavigator/DrawerNavigator"
 import MenuToggle from "../../components/MenuToggle";
 
 const styles = StyleSheet.create({

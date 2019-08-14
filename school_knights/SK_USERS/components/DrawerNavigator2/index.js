@@ -22,6 +22,12 @@ const DrawerConfig = {
 
 const DrawerNavigator = createDrawerNavigator(
   {
+    Login: {
+      screen: Login,
+      navigationOptions: ({ navigation }) => ({
+        header: null
+      })
+    },
     Home: {
       screen: Main,
       navigationOptions: ({ navigation }) => ({

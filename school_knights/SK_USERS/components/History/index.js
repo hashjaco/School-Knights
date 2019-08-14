@@ -19,7 +19,7 @@ class History extends Component {
       return (
         <View style={styles.fieldStyle}>
           <FlatList
-            data={this.props.history}
+            data={getData()}
             renderItem={this.renderItem}
             horizontal={true}
           >
@@ -29,7 +29,7 @@ class History extends Component {
   }
 
   renderItem = ({item}) => {
-    // let image = data.imageSource;
+    // let image = item.imageSource;
     return (
       <TouchableOpacity>
         {/*<Image style={styles.image} source={image} />*/}

@@ -8,13 +8,11 @@ class EmergencyButton extends Component {
   render() {
     return (
       <TouchableHighlight>
-        <View>
           <Image
             source={
               require('../../assets/EmergencyButton.png')
             }
           />
-        </View>
       </TouchableHighlight>
     );
   }

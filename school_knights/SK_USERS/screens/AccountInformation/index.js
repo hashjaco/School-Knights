@@ -1,24 +1,19 @@
 import React from 'react'
 import { StyleSheet, Text, View } from "react-native";
 import { Icon } from "react-native-elements";
+import MenuToggle from "../../components/MenuToggle";
 
-export default class FAQScreen extends React.Component {
+export default class AccountInformationScreen extends React.Component {
   static navigationOptions = {
-    drawerLabel: "FAQ"
+    drawerLabel: "Account Information",
+
   };
 
   render() {
     return (
       <View style={{ flex: 1, justifyContent: "top", alignItems: "left", marginTop: 20, marginLeft: 3 }}>
-        <Icon
-          reverse
-          name="ios-menu"
-          type="ionicon"
-          color="lightgrey"
-          onPress={() => this.props.navigation.navigate("DrawerOpen")}
-          title="DrawerOpen"
-        />
-        <Text style={[styles.pagecontent]}>This is the FAQ Page</Text>
+        <MenuToggle navigation={this.props.navigation}/>
+        <Text style={[styles.pagecontent]}>This is the Account Information Page</Text>
       </View>
     );
   }

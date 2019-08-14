@@ -1,10 +1,16 @@
 import React from "react";
-import { Text, View, Image, StyleSheet, Button } from "react-native";
+import { Text, View, StyleSheet, Dimensions, Platform } from "react-native";
 import { Icon } from "react-native-elements";
-import { DrawerNavigator } from "react-navigation";
-import { Left } from "native-base";
+import { createAppContainer, createDrawerNavigator } from "react-navigation";
+import { useScreens } from 'react-native-screens'
+
+const WIDTH = Dimensions.get('window').width
 
 class HomeScreen extends React.Component {
+  constructor(props){
+    super(props)
+  }
+
   static navigationOptions = {
     style: {color: '#4C3E54'},
     drawerLabel: "Home",
@@ -21,7 +27,7 @@ class HomeScreen extends React.Component {
           type="ionicon"
           color="lightgrey"
           position="absolute"
-          onPress={() => this.props.navigation.navigate("DrawerOpen")}
+          onPress={() => this.props.navigation.openDrawer()}
           title="DrawerOpen"
         />
         <Text style={[styles.pagecontent]}>This is the Home Page</Text>
@@ -44,7 +50,7 @@ class AccountInformationScreen extends React.Component {
           name="ios-menu"
           type="ionicon"
           color="lightgrey"
-          onPress={() => this.props.navigation.navigate("DrawerOpen")}
+          onPress={() => this.props.navigate("DrawerOpen")}
           title="DrawerOpen"
         />
         <Text style={[styles.pagecontent]}>This is the Account Information Page</Text>
@@ -152,7 +158,14 @@ const styles = StyleSheet.create({
   }
 });
 
-export default DrawerNavigator(
+const DrawerConfig = {
+  drawerPosition: "left",
+  initialRouteName: "Home",
+  // drawerBackgroundColor: "purple",
+  drawerWidth: WIDTH*0.83
+}
+
+ const DrawerNavigator = createDrawerNavigator(
   {
     Home: {
       screen: HomeScreen
@@ -176,11 +189,7 @@ export default DrawerNavigator(
       screen: LogoutScreen
     }
   },
-
-  {
-    drawerPosition: "left",
-    initialRouteName: "Home",
-   // drawerBackgroundColor: "purple",
-       drawerWidth: 250
-  }
+  DrawerConfig
 );
+
+export default createAppContainer(DrawerNavigator)

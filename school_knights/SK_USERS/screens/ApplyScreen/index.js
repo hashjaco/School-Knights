@@ -2,9 +2,10 @@ import React from 'react'
 import { StyleSheet, Text, View } from "react-native";
 import { Icon } from "react-native-elements";
 
-export default class FAQScreen extends React.Component {
+export default class ApplyScreen extends React.Component {
   static navigationOptions = {
-    drawerLabel: "FAQ"
+    drawerLabel: "Apply as Security Escort"
+
   };
 
   render() {
@@ -18,7 +19,7 @@ export default class FAQScreen extends React.Component {
           onPress={() => this.props.navigation.navigate("DrawerOpen")}
           title="DrawerOpen"
         />
-        <Text style={[styles.pagecontent]}>This is the FAQ Page</Text>
+        <Text style={[styles.pagecontent]}>This is the Apply Page</Text>
       </View>
     );
   }

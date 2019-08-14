@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 import MapSection from "../../containers/MapSection";
 import ControlSection from "../../containers/ControlSection";
+import DrawerNavigator from "../../components/DrawerNavigator/DrawerNavigator"
+import MenuToggle from "../../components/MenuToggle";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
+    alignItems: "flex-start",
     justifyContent: "center"
   }
 });
@@ -21,6 +23,7 @@ export default class Main extends Component {
     return (
       <View style={styles.container}>
         <MapSection />
+        <MenuToggle navigation={this.props.navigation} />
         <ControlSection />
       </View>
     );

@@ -1,5 +1,5 @@
 import React from "react";
-import Login from "./screens/Login";
+import Login from "./containers/TestLogin";
 import Main from "./screens/Main";
 import FAQ from "./screens/FAQ";
 import Profile from "./screens/Profile";

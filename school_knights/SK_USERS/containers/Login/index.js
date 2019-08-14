@@ -9,6 +9,8 @@ import {
     AsyncStorage,
 } from 'react-native';
 
+const UserInfo = {username: 'Admin', password: 'test123'};
+
 
 
 export default class login extends React.Component {
@@ -68,6 +70,7 @@ export default class login extends React.Component {
 
                         <TouchableOpacity
                             style={styles.btn}
+                            onTouch={this.login}
                         >
                             <Text style={styles.text}>Log In</Text>
 
@@ -80,6 +83,7 @@ export default class login extends React.Component {
 
                             <TouchableOpacity
                                 style={styles.regBtn}
+
                             >
                                 <Text style={styles.text}>Register</Text>
 
@@ -124,41 +128,7 @@ export default class login extends React.Component {
 
     }
 login = () => {
-    fetch('http://192.168.1.67:19000/users',{
-    method: 'POST',   
-    headers: {
-        'Accept': 'application/json', 
-        'Content-Type': 'application/json', 
-
-    },
-    body: JSON.stringify({
-        username: this.state.username,
-        password: this.state.password,
-
-
-    })
-
-    .then((response) => response.json())
-    .then((res) => {
-        if (res.success ===true ){
-            AsyncStorage.setItem('user', res.user);
-            this.props.navigate('Profile');
-
-        }
-        else {
-            alert(res.message);
-        }
-        
-    })
-    
-   
- 
-    }
-
-
-
-    )
-    .done();
+    alert('success!');
 }
 }
 

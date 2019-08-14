@@ -11,7 +11,7 @@ import {
 
 const UserInfo = { username: "Admin", password: "test123" };
 
-export default class login extends React.Component {
+export default class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -143,7 +143,6 @@ const styles = StyleSheet.create({
   regBtn: {
     backgroundColor: "#512FDB",
     alignSelf: "flex-end",
-    backgroundColor: "#512FDB",
     padding: 5,
     alignItems: "center",
     borderRadius: 50,

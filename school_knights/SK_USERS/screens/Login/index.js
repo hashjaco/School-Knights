@@ -4,18 +4,12 @@ import TestLogin from '../../containers/TestLogin';
 
 
 
+
 export default class Login extends Component {
-  goToMainScreen = () => {
-    const { navigate } = this.props.navigation;
-    navigate("Main");
-  };
-
-
-
   render() {
     return (
       <TouchableOpacity>
-        <TestLogin/>
+        <TestLogin navigation={this.props.navigation}/>
       </TouchableOpacity>
     );
   }

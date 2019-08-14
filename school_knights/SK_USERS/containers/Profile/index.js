@@ -33,7 +33,7 @@ export default class Profile extends React.Component {
                         <Image source={{ uri: "/Users/Teo/Desktop/csc642-team9-UIX/school_knights/SK_USERS/assets/SorrowfulElasticHyracotherium-small.gif" }} style={styles.profileImg} />
                     </TouchableHighlight>
 
-                    <Text style={styles.nameText}>Name Goes Here</Text>
+                    <Text style={styles.nameText}>John Doe</Text>
                     <Text></Text>
 
 
@@ -42,49 +42,66 @@ export default class Profile extends React.Component {
 
 
 
-                        <ScrollView style={styles.Scroll}>
-                            <TouchableOpacity style={styles.btn}>
-                                <Text>First Name:</Text>
-                            </TouchableOpacity>
 
-                            <TouchableOpacity style={styles.btn}>
-                                <Text>Last Name:</Text>
-                            </TouchableOpacity>
 
-                            <TouchableOpacity style={styles.btn}>
-                                <Text>Email:</Text>
-                            </TouchableOpacity>
+                            <View style={styles.btn}>
+                                <Text>First Name:                              </Text>
+                                <Text >John</Text>
+                            </View>
 
-                            <TouchableOpacity style={styles.btn}>
-                                <Text>Phone Number:</Text>
-                            </TouchableOpacity>
 
-                            <TouchableOpacity style={styles.btn}>
-                                <Text>Password:</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={styles.btn}>
-                                <Text>Your trips:</Text>
-                            </TouchableOpacity>
+                            <View style={styles.btn}>
+                                <Text>Last Name:                              </Text>
+                                <Text >Doe</Text>
+                            </View>
 
-                            <TouchableOpacity style={styles.btn}>
-                                <Text>Paymment Methods:</Text>
-                            </TouchableOpacity>
+                            <View style={styles.btn}>
+                                <Text>Email:          </Text>
+                                <Text >Hashcodedthis@gmail.com</Text>
+                            </View>
 
-                            <TouchableOpacity style={styles.btn}>
-                                <Text>Help:</Text>
-                            </TouchableOpacity>
+                            <View style={styles.btn}>
+                                <Text>Phone Number:                </Text>
+                                <Text >510-415-1650</Text>
+                            </View>
 
-                        </ScrollView>
+
+                            <View style={styles.btn}>
+                                <Text>Password:                              </Text>
+                                <Text >**********</Text>
+                            </View>
+
+
+                            <View style={styles.btn}>
+                                <Text>Trips:                              </Text>
+                                <Text >                10</Text>
+                            </View>
+
+
+
+                            <View style={styles.btn}>
+                                <Text>Payment Methds:     </Text>
+                                <Text >Visa ending in 1578</Text>
+                            </View>
+
+
+
+                            <View style={styles.btn}>
+                                <Text>Tier Level:                                     </Text>
+                                <Text >Gold</Text>
+                            </View>
+
+
+
+
 
                     </View>
 
 
                     <View>
                         <Text></Text>
-                        <TouchableOpacity style={styles.updateButton}>
-                            <Text style={styles.nameText}>Update Profile  </Text>
-                        </TouchableOpacity>
                         <Text></Text>
+
                         <TouchableOpacity style={styles.updateButton}>
                             <Text style={styles.nameText}>Register as a Knight</Text>
                         </TouchableOpacity>
@@ -156,7 +173,7 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 20,
         justifyContent: 'center',
-        color: 'black'
+
 
     },
 
@@ -196,7 +213,19 @@ const styles = StyleSheet.create({
         flex: 3,
         backgroundColor: 'white',
         height: 40,
-        borderRadius: 50,
+        alignContent:'space-around',
+        borderWidth: 1,
+        flexDirection: 'row',
+
+        width: 275,
+        paddingLeft: 10,
+        paddingTop: 10
+    },
+    userInfo: {
+        flex: 3,
+        backgroundColor: 'white',
+        height: 40,
+
         borderWidth: 1,
         alignItems: 'stretch',
         borderRadius: 10,
@@ -207,18 +236,13 @@ const styles = StyleSheet.create({
 
     updateButton: {
 
-        paddingTop: 10,
-        backgroundColor: 'white',
 
-        borderRadius: 50,
-        borderWidth: 1,
-        alignItems: 'stretch',
         borderRadius: 10,
         backgroundColor: '#512FDB',
         padding: 5,
         alignItems: 'center',
-        borderRadius: 50,
-        borderWidth: 1
+
+
 
     },
 

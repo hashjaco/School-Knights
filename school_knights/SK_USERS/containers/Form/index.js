@@ -21,7 +21,7 @@ export default class Register extends React.Component {
 
     goToMainScreen = () => {
         const { navigate } = this.props.navigation;
-        navigate("Main");
+        navigate("Home");
     };
 
     goToFAQScreen = () => {

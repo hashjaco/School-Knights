@@ -10,14 +10,23 @@ export default class Login extends Component {
 
   render() {
     return (
-      <TouchableOpacity>
 
-          <Button
-            title="Click me to go to Main page"
-            onPress={this.goToMainScreen}
-          />
+      <View style={{ flex: 1, justifyContent: "top", alignItems: "left", marginTop: 20, marginLeft: 3 }}>
+      <Icon
 
+        reverse
+        name="ios-menu"
+        type="ionicon"
+        color="lightgrey"
+        position="absolute"
+        onPress={() => this.props.navigation.openDrawer()}
+        title="DrawerOpen"
+      />
+        <TouchableOpacity>
+<Profile/>
       </TouchableOpacity>
+    </View>
+    
     );
   }
 }

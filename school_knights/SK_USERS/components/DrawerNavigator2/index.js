@@ -2,7 +2,8 @@ import React from "react";
 import { Dimensions, Platform } from "react-native";
 import { createAppContainer, createDrawerNavigator } from "react-navigation";
 import Main from "../../screens/Main";
-import Login from "../../screens/Login";
+import Login from "../../containers/Login";
+import Form from "../../containers/Form";
 import ApplyScreen from "../../screens/ApplyScreen";
 import FAQScreen from "../../screens/FAQ";
 import LogoutScreen from "../../screens/LogoutScreen";
@@ -42,6 +43,13 @@ const DrawerNavigator = createDrawerNavigator(
     },
     Logout: {
       screen: LogoutScreen,
+      navigationOptions: ({ navigation }) => ({
+        header: null
+      })
+    },
+
+    Register:{
+      screen: Form,
       navigationOptions: ({ navigation }) => ({
         header: null
       })

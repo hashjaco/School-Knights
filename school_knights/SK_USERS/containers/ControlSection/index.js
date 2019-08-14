@@ -4,7 +4,8 @@ import {
   StyleSheet,
   NativeModules,
   LayoutAnimation,
-  Animated
+  Animated,
+  Dimensions
 } from "react-native";
 import InputField from "../../containers/InputField";
 import History from "../../components/History";
@@ -16,31 +17,80 @@ import { changeFieldColors, slideDown, slideUp } from "../../redux/actions";
 class ControlSection extends Component {
   constructor(props) {
     super(props);
-    this.moveAnimation = new Animated.ValueXY();
-    this.sectionHeight = this.moveAnimation.getLayout().y;
+
+    this.state = {
+      destination: "",
+      pickUpLocation: "",
+      pickUpTime: "",
+      isMounted: false,
+      isActive: false,
+      animatedController: {
+        height: "35%",
+        position: "absolute",
+        // flex: 1,
+        // flexDirection: "column",
+        width: "100%",
+        bottom: 0,
+        alignItems: "flex-end",
+        borderTopWidth: 1
+      }
+    };
+  }
+
+  componentDidMount() {
+    this.setState({
+      isMounted: true
+    });
   }
 
   _slideUp = () => {
-    Animated.spring(this.moveAnimation, {
-      toValue: { x: 0, y: this.sectionHeight - 200 }
-    }).start();
+    if (this.state.isMounted) {
+      this.setState({...state,
+        isActive: !this.state.isActive
+      });
+      if (this.state.isActive === true) {
+        LayoutAnimation.configureNext(LayoutAnimation.Presets.spring, () => {
+          console.log("animation ended");
+        });
+        this.setState({ ...state,
+          animationController: {
+            height: "50%",
+            position: "absolute",
+            flex: 1,
+            flexDirection: "column",
+            width: "100%",
+            bottom: 0,
+            alignItems: "flex-end",
+            borderTopWidth: 1
+          }
+        });
+      } else {
+        this.setState({ ...state,
+          height: "35%"
+        });
+      }
+    }
   };
 
-  changeFieldColors = () => {};
+  animatedContainer = {
+    position: "absolute",
+    // flex: 1,
+    // flexDirection: "column",
+    width: "100%",
+    bottom: 0,
+    alignItems: "flex-end",
+    borderTopWidth: 1
+  };
 
   render() {
     return (
-      <Animated.View style={styles.animatedContainer}>
+      <View style={this.animatedContainer}>
         <EmergencyButton style={styles.button} />
         <View style={styles.container}>
-          <InputField
-            onPress={
-              this.props.changeFieldColors("#000", "#FCFCFC") && this._slideUp
-            }
-          />
+          <InputField value="myTrip" onPress={this._slideUp} />
           <History />
         </View>
-      </Animated.View>
+      </View>
     );
   }
 }
@@ -75,17 +125,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     bottom: 0,
     alignItems: "center"
-  },
-
-  animatedContainer: {
-    position: "absolute",
-    // flex: 1,
-    // flexDirection: "column",
-    height: "35%",
-    width: "100%",
-    bottom: 0,
-    alignItems: "flex-end",
-    borderTopWidth: 1
   },
 
   button: {

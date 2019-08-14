@@ -4,58 +4,78 @@ import React, { Component } from "react";
 import {
   View,
   StyleSheet,
+  ScrollView,
   Image,
   FlatList,
   ActivityIndicator,
   TouchableOpacity
 } from "react-native";
 import { Text } from "react-native-elements";
-import { getData } from "../../redux/actions/index"; //Import your actions
-import * as actions from "../../redux/actions/index";
 import { connect } from "react-redux";
+import { history } from "../../data/history";
+
 
 class History extends Component {
-  render() {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      location: ""
+    };
+
+
+    this.renderList = () => {
+      // let image = item.imageSource;
+      let locations = history;
+      console.log(locations.history);
+
       return (
-        <View style={styles.fieldStyle}>
-          <FlatList
-            data={getData()}
-            renderItem={this.renderItem}
-            horizontal={true}
-          >
-          </FlatList>
-        </View>
-      );
+        locations.map(location => {
+          return (
+            <TouchableOpacity>
+              <Image
+                style={styles.image}
+                source={require("../../assets/Home-icon.png")}
+              />
+              <View style={styles.savedAddress}>
+                <Text style={styles.label}>{location.name}</Text>
+                <Text style={styles.address}>{location.address}</Text>
+              </View>
+            </TouchableOpacity>
+          );
+        }))
+      };
   }
 
-  renderItem = ({item}) => {
-    // let image = item.imageSource;
+  render() {
     return (
-      <TouchableOpacity>
-        {/*<Image style={styles.image} source={image} />*/}
-        <View style={styles.savedAddress}>
-          <Text style={styles.label}>{item.name}</Text>
-          <Text style={styles.address}>{item.address}</Text>
-        </View>
-      </TouchableOpacity>
+      <ScrollView
+        style={styles.fieldStyle}
+        horizontal={true}
+        decelerationRate={0}
+        snapToInterval={380}
+        snapToAlignment={"center"}
+      >
+        {this.renderList()}
+      </ScrollView>
     );
-  };
+  }
 }
 
 // The function takes data from the app current state,
 // and insert/links it into the props of our component.
 // This function makes Redux know that this component needs to be passed a piece of the state
-const mapStateToProps = state => {
-  return {
-    ...state
-  }
-};
+// const mapStateToProps = state => {
+//   return {
+//     ...state
+//   }
+// };
 
 // Doing this merges our actions into the component’s props,
 // while wrapping them in dispatch() so that they immediately dispatch an Action.
 // Just by doing this, we will have access to the actions defined in out actions file (action/home.js)
 
-export default connect(mapStateToProps)(History);
+export default History;
 
 const styles = StyleSheet.create({
   fieldStyle: {

@@ -1,5 +1,6 @@
 import React from "react";
 import { TextInput, TouchableOpacity } from "react-native";
+import { View } from "react-native";
 
 const DestinationField = () => {
   const inputTextColor = "#000";

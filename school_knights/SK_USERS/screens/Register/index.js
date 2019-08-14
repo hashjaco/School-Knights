@@ -6,6 +6,7 @@ export default class Login extends Component {
   goToMainScreen = () => {
     const { navigate } = this.props.navigation;
     navigate("Main");
+
   };
 
   render() {

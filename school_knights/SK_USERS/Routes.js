@@ -3,7 +3,7 @@ import Login from "./containers/TestLogin";
 import Main from "./screens/Main";
 import FAQ from "./screens/FAQ";
 import Profile from "./screens/Profile";
-import Register from "./screens/Register";
+import Form from "./containers/Form";
 
 import { createStackNavigator } from "react-navigation";
 
@@ -23,7 +23,7 @@ export const Routes = createStackNavigator(
     },
     FAQ: { screen: FAQ },
     Register: {
-      screen: Register,
+      screen: Form,
       navigationOptions: ({ navigation }) => ({
         header: null
       })

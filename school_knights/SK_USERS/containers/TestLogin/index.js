@@ -158,17 +158,17 @@ if (value !== null){
     else{
       alert('Error, Something went wrong: Username or Password are invalid Please try again')
     }
-  }
+  };
 
   register = () => {
-    alert('Going to Register');
+
     this.goToRegisterScreen();
-  }
+  };
 
   FAQ = () => {
-    alert('Going to FAQ');
+
     this.goToFAQScreen();
-  }
+  };
 
 }
 

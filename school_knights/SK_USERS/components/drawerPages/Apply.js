@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   top: {
     height: "10%",
-    backgroundColor: "purple"
+    backgroundColor: "#512FDB"
   },
   title: {
     fontSize: 60,
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
 
   bottom: {
     height: 800,
-    backgroundColor: "purple",
+    backgroundColor: "#512FDB",
     flexDirection: "row",
     flexWrap: "wrap",
     padding: 25,
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     color: 'black',
   },
   btn: {
-    backgroundColor: 'purple',
+    backgroundColor: '#512FDB',
 
     alignItems: 'center',
     justifyContent: 'center',

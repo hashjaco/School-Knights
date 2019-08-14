@@ -19,19 +19,19 @@ export class FAQSScreen extends Component {
             <Text style={styles.textQuestions}>
               Q. How to request a security escort?
             </Text>
-            <Text style={styles.textAnswers}>A. This is the answer</Text>
+            <Text style={styles.textAnswers}>A. On the home page with the map, designate where you want to go and specify where to be picked up.</Text>
             <Text style={styles.textQuestions}>
-              Q. How to request a security escort?
+              Q. How to specify where to be picked up?
             </Text>
-            <Text style={styles.textAnswers}>A. This is the answer</Text>
+            <Text style={styles.textAnswers}>A. There is a button after designating where to go that asks where you want to be picked up.</Text>
             <Text style={styles.textQuestions}>
-              Q. How to request a security escort?
+              Q. Where do I apply for a job as a security escort?
             </Text>
-            <Text style={styles.textAnswers}>A. This is the answer</Text>
+            <Text style={styles.textAnswers}>A. After logging in, use the menu tab in the top left and click Apply as Security Escort.</Text>
             <Text style={styles.textQuestions}>
-              Q. How to request a security escort?
+              Q. Do I have to register to use the app?
             </Text>
-            <Text style={styles.textAnswers}>A. This is the answer</Text>
+            <Text style={styles.textAnswers}>A. Yes, the first page asks to login or register as a new user.</Text>
           </View>
         </View>
       </View>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   top: {
     height: "10%",
-    backgroundColor: "purple"
+    backgroundColor: "#512FDB"
   },
   title: {
     fontSize: 60,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
 
   bottom: {
     height: "90%",
-    backgroundColor: "purple",
+    backgroundColor: "#512FDB",
     flexDirection: "row",
     flexWrap: "wrap",
     padding: 25,

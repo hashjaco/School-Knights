@@ -26,7 +26,7 @@ export default class TestLogin extends React.Component {
   goToRegisterScreen = () =>{
 
     const { navigate } = this.props.navigation;
-    navigate("Register");
+    navigate("LegalDisclaimer");
   };
 
   goToFAQScreen = () =>{

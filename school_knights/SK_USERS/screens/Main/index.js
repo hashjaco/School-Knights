@@ -21,9 +21,9 @@ export default class Main extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <MapSection/>
+
         <MenuToggle navigation={this.props.navigation} />
-        <ControlSection/>
+       
       </View>
     );
   }

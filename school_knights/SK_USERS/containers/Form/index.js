@@ -16,7 +16,7 @@ export default class Register extends React.Component {
 
     goToLoginScreen = () => {
         const { navigate } = this.props.navigation;
-        navigate("Login");
+        navigate("Rewards");
     };
 
     goToMainScreen = () => {

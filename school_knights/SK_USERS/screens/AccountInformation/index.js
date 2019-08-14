@@ -13,8 +13,7 @@ export default class AccountInformationScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, justifyContent: "top", alignItems: "left", marginTop: 20, marginLeft: 3 }}>
-      <Icon
-
+      
         reverse
         name="ios-menu"
         type="ionicon"

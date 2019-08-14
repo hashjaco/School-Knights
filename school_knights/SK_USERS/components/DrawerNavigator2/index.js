@@ -14,18 +14,13 @@ const WIDTH = Dimensions.get("window").width;
 const DrawerConfig = {
   drawerPosition: "left",
   initialRouteName: "Login",
-  // drawerBackgroundColor: "purple",
+   drawerBackgroundColor: "#512FDB",
   drawerWidth: WIDTH * 0.83
 };
 
 const DrawerNavigator = createDrawerNavigator(
   {
-    Login: {
-      screen: Login,
-      navigationOptions: ({ navigation }) => ({
-        header: null
-      })
-    },
+    
     Home: {
       screen: Main,
       navigationOptions: ({ navigation }) => ({
@@ -53,7 +48,13 @@ const DrawerNavigator = createDrawerNavigator(
       navigationOptions: ({ navigation }) => ({
         header: null
       })
-    }
+    },
+    Login: {
+      screen: Login,
+      navigationOptions: ({ navigation }) => ({
+        header: null
+      })
+    },
   },
   DrawerConfig
 );

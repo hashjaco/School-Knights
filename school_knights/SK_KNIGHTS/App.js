@@ -1,19 +1,42 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from "react";
+import { StyleSheet, ProgressViewIOS } from "react-native";
+import thunk from "redux-thunk";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import DrawerNavigator from "./components/DrawerNavigator2"
+import reducers from "./redux/reducers";
+import { useScreens } from "react-native-screens";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.store = createStore(reducers, applyMiddleware(thunk));
+
+    this.state = {
+      isReady: false
+    }
+  }
+
+
+  async componentDidMount() {
+    this.setState({ isReady: true });
+    useScreens();
+  }
+
+  render() {
+    return (
+      <Provider store={this.store}>
+        {this.state.isReady ? <DrawerNavigator /> : <ProgressViewIOS/> }
+      </Provider>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  }
 });

@@ -43,20 +43,20 @@ export default class login extends React.Component {
               style={styles.TextInput}
               placeholder="username"
               onChangeText={username => this.setState({ username })}
-            ></TextInput>
+            />
 
             <TextInput
               style={styles.TextInput}
               placeholder="password"
               onChangeText={password => this.setState({ password })}
-            ></TextInput>
+            />
 
             <TouchableOpacity style={styles.btn} onTouch={this.login}>
               <Text style={styles.text}>Log In</Text>
             </TouchableOpacity>
 
             <View style={styles.registerAndButton}>
-              <Text style={(fontSize = 12)}>Need an Account?</Text>
+              <Text style={"fontSize: 12"}>Need an Account?</Text>
 
               <TouchableOpacity style={styles.regBtn}>
                 <Text style={styles.text}>Register</Text>
@@ -64,7 +64,7 @@ export default class login extends React.Component {
             </View>
 
             <View style={styles.registerAndButton}>
-              <Text style={(fontSize = 12)}>Join our KnightHood?</Text>
+              <Text style={"fontSize: 12"}>Join our KnightHood?</Text>
 
               <TouchableOpacity style={styles.regBtn}>
                 <Text style={styles.text}>Learn More</Text>

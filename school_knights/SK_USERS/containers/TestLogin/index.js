@@ -20,6 +20,13 @@ export default class TestLogin extends React.Component {
     const { navigate } = this.props.navigation;
     navigate("Main");
   };
+
+  goToRegisterScreen = () =>{
+
+    const { navigate } = this.props.navigation;
+    navigate("Register");
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -90,6 +97,7 @@ if (value !== null){
 
               <TouchableOpacity
                 style={styles.regBtn}
+                onPress = {this.register}
 
               >
                 <Text style={styles.text}>Register</Text>
@@ -140,8 +148,13 @@ if (value !== null){
       this.goToMainScreen();
     }
     else{
-      alert('Error, Something went wrong: USername or Password are invalid Please try again')
+      alert('Error, Something went wrong: Username or Password are invalid Please try again')
     }
+  }
+
+  register = () => {
+    alert('Going to Register');
+    this.goToRegisterScreen();
   }
 }
 

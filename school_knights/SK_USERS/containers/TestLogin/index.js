@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 const UserInfo = {username: 'Admin', password: 'test123'};
+const UserInfo2 = {username: 'JohnDoe69', password: 'test123'};
 
 
 
@@ -151,7 +152,8 @@ if (value !== null){
 
   }
   login = () => {
-    if(UserInfo.username === this.state.username && UserInfo.password === this.state.password){
+    if((UserInfo.username === this.state.username && UserInfo.password === this.state.password)||
+      (UserInfo2.username === this.state.username && UserInfo2.password === this.state.password)){
       alert('success!');
       this.goToMainScreen();
     }
@@ -169,6 +171,12 @@ if (value !== null){
 
     this.goToFAQScreen();
   };
+
+  toProfile = () => {
+
+    this.goToFAQScreen();
+  };
+
 
 }
 

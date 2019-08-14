@@ -26,10 +26,12 @@ class ControlSection extends Component {
     }).start();
   };
 
+  changeFieldColors = () => {};
+
   render() {
     return (
       <Animated.View style={styles.animatedContainer}>
-        <EmergencyButton style={styles.button}/>
+        <EmergencyButton style={styles.button} />
         <View style={styles.container}>
           <InputField
             onPress={

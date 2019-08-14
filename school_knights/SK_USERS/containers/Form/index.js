@@ -24,21 +24,21 @@ export default class Register extends React.Component {
         navigate("Main");
     };
 
-    goToFAQScreen = () =>{
+    goToFAQScreen = () => {
 
         const { navigate } = this.props.navigation;
         navigate("FAQ");
     };
 
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state  = {
-            FirstName:'',
+        this.state = {
+            FirstName: '',
             LastName: '',
-            Email:'',
+            Email: '',
             password: '',
-            confirmPassword:'',
+            confirmPassword: '',
 
         }
     }
@@ -49,112 +49,112 @@ export default class Register extends React.Component {
         this._loadInitialState().done();
     }
     _loadInitialState = async () => {
-        let value = await AsyncStorage.getItem("User",()=> {
+        let value = await AsyncStorage.getItem("User", () => {
             console.log("hopefully this works")
         });
-        if (value !== null){
+        if (value !== null) {
             this.props.navigation("profile");
 
         }
     };
-    render(){
-        return(
-            
-<KeyboardAvoidingView behavior='padding' style={styles.wrapper}>
+    render() {
+        return (
 
-<View style={styles.topContainer}>
-   
-<Text style = {styles.header}>Register </Text>
+            <KeyboardAvoidingView behavior='padding' style={styles.wrapper}>
 
-    
-</View>
+                <View style={styles.topContainer}>
 
-<View style={styles.bottomContainer}>
-<View style={styles.formContainer}>
-        
+                    <Text style={styles.header}>Register </Text>
 
 
-        
-        <TextInput
-            style= {styles.TextInput} placeholder ='FirstName'
-            onChangeText={(FirstName) => this.setState({ FirstName})}
-         >
-        </TextInput>
+                </View>
 
-        <TextInput style = {styles.TextInput} placeholder = 'LastName'
-            onChangeText={(LastName) => this.setState({ LastName})}>
-
-        </TextInput>
-
-        <TextInput
-            style= {styles.TextInput} placeholder ='Email'
-            onChangeText={(Email) => this.setState({ Email})}
-         >
-        </TextInput>
-
-        <TextInput
-            style= {styles.TextInput} placeholder ='Password'
-            onChangeText={(password) => this.setState({ password})}
-            secureTextEntry={true}
-
-         >
-        </TextInput>
-
-        <TextInput
-            style= {styles.TextInput} placeholder ='Confirm Password'
-            onChangeText={(confirmPassword) => this.setState({ confirmPassword})}
-            secureTextEntry={true}
-         >
-        </TextInput>
-
-
-        <TouchableOpacity
-        style = {styles.btn}
-        onPress= {this.toMain}>
-            <Text style={styles.text}>Register</Text>
-
-</TouchableOpacity>
-
-
-<View style= {styles.registerAndButton}>
-
-<Text style = {fontSize=12}>Already have an Account?</Text>
-
-<TouchableOpacity
-        style = {styles.regBtn}
-        onPress= {this.toLogin}>
-            <Text style={styles.text}>Log in</Text>
-
-</TouchableOpacity>
-
-</View>
-
-
-<View style= {styles.registerAndButton}>
-
-<Text style = {fontSize=12}>Join our KnightHood?</Text>
-
-<TouchableOpacity
-        style = {styles.regBtn}
-        onPress= {this.FAQ}
->
-            <Text style={styles.text}>Learn More</Text>
-
-</TouchableOpacity>
-
-</View>
+                <View style={styles.bottomContainer}>
+                    <View style={styles.formContainer}>
 
 
 
-</View  >
+                        <Text style={styles.Labels}>FirstName:</Text>
+                        <TextInput
+                            style={styles.TextInput} placeholder='FirstName'
+                            onChangeText={(FirstName) => this.setState({ FirstName })}
+                        >
+                        </TextInput>
+                        <Text style={styles.Labels}>LastName:</Text>
+                        <TextInput style={styles.TextInput} placeholder='LastName'
+                            onChangeText={(LastName) => this.setState({ LastName })}>
 
-</View>
+                        </TextInput>
+                        <Text style={styles.Labels}>Email:</Text>
+                        <TextInput
+                            style={styles.TextInput} placeholder='Email@gmail.com'
+                            onChangeText={(Email) => this.setState({ Email })}
+                        >
+                        </TextInput>
+                        <Text style={styles.Labels}>Password:</Text>
+                        <TextInput
+                            style={styles.TextInput} placeholder='Required'
+                            onChangeText={(password) => this.setState({ password })}
+                            secureTextEntry={true}
 
-    </KeyboardAvoidingView>
+                        >
+                        </TextInput>
+                        <Text style={styles.Labels}>Confirm Password:</Text>
+                        <TextInput
+                            style={styles.TextInput} placeholder='Required'
+                            onChangeText={(confirmPassword) => this.setState({ confirmPassword })}
+                            secureTextEntry={true}
+                        >
+                        </TextInput>
 
-            
+
+                        <TouchableOpacity
+                            style={styles.btn}
+                            onPress={this.toMain}>
+                            <Text style={styles.text}>Register</Text>
+
+                        </TouchableOpacity>
+
+
+                        <View style={styles.registerAndButton}>
+
+                            <Text style={fontSize = 12}>Already have an Account?</Text>
+
+                            <TouchableOpacity
+                                style={styles.regBtn}
+                                onPress={this.toLogin}>
+                                <Text style={styles.text}>Log in</Text>
+
+                            </TouchableOpacity>
+
+                        </View>
+
+
+                        <View style={styles.registerAndButton}>
+
+                            <Text style={fontSize = 12}>Join our KnightHood?</Text>
+
+                            <TouchableOpacity
+                                style={styles.regBtn}
+                                onPress={this.FAQ}
+                            >
+                                <Text style={styles.text}>Learn More</Text>
+
+                            </TouchableOpacity>
+
+                        </View>
+
+
+
+                    </View  >
+
+                </View>
+
+            </KeyboardAvoidingView>
+
+
         );
-            
+
     }
 
     toLogin = () => {
@@ -166,15 +166,15 @@ export default class Register extends React.Component {
     };
 
     toMain = () => {
-        if ((this.state.FirstName.trim().length > 0)&&
-          (this.state.LastName.trim().length > 0)&&
-        (this.state.Email.trim().length > 0) &&
-          (this.state.password.trim().length > 0) &&
-          (this.state.confirmPassword.trim().length > 0)){
+        if ((this.state.FirstName.trim().length > 0) &&
+            (this.state.LastName.trim().length > 0) &&
+            (this.state.Email.trim().length > 0) &&
+            (this.state.password.trim().length > 0) &&
+            (this.state.confirmPassword.trim().length > 0)) {
             this.goToMainScreen()
         }
-    else {
-    alert('Please fill all the requested information')
+        else {
+            alert('Please fill all the requested information')
         }
 
 
@@ -191,45 +191,52 @@ export default class Register extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    wrapper:{
-        flex:1,
+    wrapper: {
+        flex: 1,
     },
-topContainer:{
-    width: 450,
-    height: 150,
-    backgroundColor:  '#512FDB',
-    alignItems:'flex-start'
+    Labels: {
+        fontSize: 14,
+        fontWeight: 'bold',
+        alignSelf: 'flex-start',
+        paddingLeft: 10
 
-}
+    },
+    topContainer: {
+        width: 450,
+        height: 150,
+        backgroundColor: '#512FDB',
+        alignItems: 'flex-start'
+
+    }
 
 
     ,
 
-    formContainer:{
-        flexWrap:'wrap',
+    formContainer: {
+        flexWrap: 'wrap',
         paddingTop: 40,
         width: 300,
-        height: 600,
+        height: 650,
         borderWidth: 1,
         borderRadius: 10,
-        borderColor: 'black' ,
+        borderColor: 'black',
         alignSelf: 'center'
 
     },
 
-    bottomContainer:{
+    bottomContainer: {
         width: 400,
         height: 650,
-        backgroundColor:  'white',
-        alignSelf:'center',
+        backgroundColor: 'white',
+        alignSelf: 'center',
     },
 
     header: {
-        
-        color: 'white', 
-        fontWeight:'bold',
-       padding:75,
-        fontSize:35,
+
+        color: 'white',
+        fontWeight: 'bold',
+        padding: 75,
+        fontSize: 35,
 
     },
 
@@ -239,56 +246,56 @@ topContainer:{
         marginBottom: 20,
         borderRadius: 100,
         borderWidth: 1
-        
+
     },
 
     btn: {
         alignSelf: 'stretch',
-    backgroundColor:  '#512FDB',
+        backgroundColor: '#512FDB',
         padding: 20,
         alignItems: 'center',
         borderRadius: 100,
         borderWidth: 1
     },
 
-    registerAndButton:{
-        flexDirection:'row',
+    registerAndButton: {
+        flexDirection: 'row',
         padding: 5,
         alignItems: 'center',
-        justifyContent:'flex-start'    
+        justifyContent: 'flex-start'
     },
 
     regBtn: {
 
 
         alignSelf: 'flex-end',
-        backgroundColor:  '#512FDB',
-            padding: 5,
-            alignItems: 'center',
-            borderRadius: 50,
-            borderWidth: 1
-        
+        backgroundColor: '#512FDB',
+        padding: 5,
+        alignItems: 'center',
+        borderRadius: 50,
+        borderWidth: 1
+
     },
 
-    text:{
+    text: {
 
-        
-        
-        color:'white'
-        },
 
-    
-    
+
+        color: 'white'
+    },
+
+
+
 
     bottomText: {
         textAlignVertical: 'center',
         fontSize: 14,
-        color: 'black', 
-        fontWeight:'bold',
-       
+        color: 'black',
+        fontWeight: 'bold',
+
     },
 
-    
+
 
 
 

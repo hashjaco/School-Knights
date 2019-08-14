@@ -72,7 +72,7 @@ if (value !== null){
           <View style={styles.formContainer}>
 
 
-
+        <Text style ={styles.Labels}>Login:</Text>
 
             <TextInput
               style={styles.TextInput} placeholder='username'
@@ -80,7 +80,7 @@ if (value !== null){
 
             >
             </TextInput>
-
+            <Text style ={styles.Labels}>Password:</Text>
 
             <TextInput
               style={styles.TextInput} placeholder='password'
@@ -190,10 +190,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#512FDB',
     alignItems: 'flex-start'
 
-  }
+  },
+  Labels:{
+    fontSize: 14,
+    fontWeight: 'bold',
+    alignSelf: 'flex-start',
+    paddingLeft:10
 
-
-  ,
+  },
 
   formContainer: {
     flexWrap: 'wrap',

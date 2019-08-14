@@ -7,10 +7,11 @@ import {
   KeyboardAvoidingView,
   TouchableOpacity,
   AsyncStorage,
+  ScrollView
 } from 'react-native';
 
 const UserInfo = {username: 'Admin', password: 'test123'};
-const UserInfo2 = {username: 'JohnDoe', password: 'test123'};
+const UserInfo2 = {username: 'JohnDoe', password: 'big'};
 
 
 
@@ -59,7 +60,7 @@ if (value !== null){
 
   render() {
     return (
-
+<ScrollView>
       <KeyboardAvoidingView behavior='padding' style={styles.wrapper}>
 
         <View style={styles.topContainer}>
@@ -146,8 +147,7 @@ if (value !== null){
 
 
       </KeyboardAvoidingView>
-
-
+      </ScrollView>
     );
 
 

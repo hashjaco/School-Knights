@@ -7,6 +7,7 @@ import {
     KeyboardAvoidingView,
     TouchableOpacity,
     AsyncStorage,
+    ScrollView
 } from 'react-native';
 
 
@@ -59,6 +60,7 @@ export default class Register extends React.Component {
     };
     render() {
         return (
+            <ScrollView>
 
             <KeyboardAvoidingView behavior='padding' style={styles.wrapper}>
 
@@ -151,7 +153,7 @@ export default class Register extends React.Component {
                 </View>
 
             </KeyboardAvoidingView>
-
+            </ScrollView>
 
         );
 

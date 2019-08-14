@@ -27,6 +27,13 @@ export default class TestLogin extends React.Component {
     navigate("Register");
   };
 
+  goToFAQScreen = () =>{
+
+    const { navigate } = this.props.navigation;
+    navigate("FAQ");
+  };
+
+
   constructor(props) {
     super(props);
     this.state = {
@@ -113,6 +120,7 @@ if (value !== null){
 
               <TouchableOpacity
                 style={styles.regBtn}
+                onPress = {this.FAQ}
               >
                 <Text style={styles.text}>Learn More</Text>
 
@@ -156,6 +164,12 @@ if (value !== null){
     alert('Going to Register');
     this.goToRegisterScreen();
   }
+
+  FAQ = () => {
+    alert('Going to FAQ');
+    this.goToFAQScreen();
+  }
+
 }
 
 const styles = StyleSheet.create({

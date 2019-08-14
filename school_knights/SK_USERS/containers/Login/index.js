@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 
 const UserInfo = {username: 'Admin', password: 'test123'};
-const UserInfo2 = {username: 'JohnDoe69', password: 'test123'};
+const UserInfo2 = {username: 'JohnDoe', password: 'test123'};
 
 
 
@@ -154,7 +154,7 @@ if (value !== null){
   }
   login = () => {
     if((UserInfo.username === this.state.username && UserInfo.password === this.state.password)||
-    (UserInfo.username === this.state.username && UserInfo.password === this.state.password)){
+    (UserInfo2.username === this.state.username && UserInfo2.password === this.state.password)){
       alert('success!');
       this.goToMainScreen();
     }

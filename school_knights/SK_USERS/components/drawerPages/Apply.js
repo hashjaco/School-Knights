@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import { FormInput, ScrollView, Text, View, Image, StyleSheet, Button, TextInput, TouchableOpacity } from "react-native";
 
 
-export class ApplyKnightScreen extends Component {
-  handlePress() {
-    alert('clicked');
-  }
+export class Apply extends Component {
+  
 
 
   render() {
@@ -96,7 +94,7 @@ const styles = StyleSheet.create({
   },
   btn: {
     backgroundColor: 'purple',
-    border: 'none',
+
     alignItems: 'center',
     justifyContent: 'center',
     marginLeft: 220,
@@ -108,9 +106,9 @@ const styles = StyleSheet.create({
     color: 'white',
     padding: 10,
     textAlign: 'center',
-    display: 'inline-block',
+
     fontSize: 16
   }
 });
 
-export default ApplyknightScreen;
+export default Apply;

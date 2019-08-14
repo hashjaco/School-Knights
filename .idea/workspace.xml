@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6914e37d-370b-44e5-8e52-8d9ea2d9cfbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.idea/SK_USERS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator/ApplyScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator/FAQScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator/UploadImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/TestLogin/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator/DrawerNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator/DrawerNavigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator2/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/config/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/config/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Form/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/containers/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/screens/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/screens/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/screens/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/screens/Profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/screens/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/screens/Register/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school_knights/SK_USERS/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/school_knights/SK_USERS/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,16 +43,25 @@
         <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator2/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator2/index.js">
+        <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/containers/Login/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+            <state relative-caret-position="492">
+              <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -52,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/school_knights/SK_USERS/containers/MapContainer/index.js" />
         <option value="$PROJECT_DIR$/school_knights/SK_USERS/Podfile" />
         <option value="$PROJECT_DIR$/school_knights/SK_USERS/containers/MapSection/index.js" />
         <option value="$PROJECT_DIR$/school_knights/SK_USERS/src/components/Map/index.js" />
@@ -103,6 +134,7 @@
         <option value="$PROJECT_DIR$/school_knights/SK_USERS/containers/ControlSection/index.js" />
         <option value="$PROJECT_DIR$/school_knights/SK_USERS/redux/store/index.js" />
         <option value="$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator2/index.js" />
+        <option value="$PROJECT_DIR$/school_knights/SK_USERS/containers/Login/index.js" />
       </list>
     </option>
   </component>
@@ -169,6 +201,21 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="DrawerNavigator2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PiggyBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PiggyBack" type="462c0819:PsiDirectoryNode" />
+              <item name="school_knights" type="462c0819:PsiDirectoryNode" />
+              <item name="SK_USERS" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PiggyBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PiggyBack" type="462c0819:PsiDirectoryNode" />
+              <item name="school_knights" type="462c0819:PsiDirectoryNode" />
+              <item name="SK_USERS" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -224,7 +271,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75684000" />
+    <option name="totallyTimeSpent" value="76488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-139" width="1920" height="1080" extended-state="0" />
@@ -260,13 +307,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/school_knights/Users-WEB/containers/Map/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -456,7 +496,7 @@
     <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -635,8 +675,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/components/DrawerNavigator2/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        <state relative-caret-position="-68">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_knights/SK_USERS/containers/Login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

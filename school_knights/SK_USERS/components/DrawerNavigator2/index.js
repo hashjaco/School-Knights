@@ -1,21 +1,18 @@
 import React from "react";
-import { Text, View, StyleSheet, Dimensions, Platform } from "react-native";
-import { Icon } from "react-native-elements";
+import { Dimensions, Platform } from "react-native";
 import { createAppContainer, createDrawerNavigator } from "react-navigation";
-import { useScreens } from "react-native-screens";
 import Main from "../../screens/Main";
 import Login from "../../screens/Login";
 import ApplyScreen from "../../screens/ApplyScreen";
 import FAQScreen from "../../screens/FAQ";
 import LogoutScreen from "../../screens/LogoutScreen";
-import HomeScreen from "../../screens/HomeScreen";
 import AccountInformationScreen from "../../screens/AccountInformation";
 
 const WIDTH = Dimensions.get("window").width;
 
 const DrawerConfig = {
   drawerPosition: "left",
-  initialRouteName: "Home",
+  initialRouteName: "Login",
   // drawerBackgroundColor: "purple",
   drawerWidth: WIDTH * 0.83
 };

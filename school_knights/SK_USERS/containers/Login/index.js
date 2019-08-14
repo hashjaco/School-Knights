@@ -9,6 +9,8 @@ import {
   AsyncStorage
 } from "react-native";
 
+const UserInfo = { username: "Admin", password: "test123" };
+
 export default class login extends React.Component {
   constructor(props) {
     super(props);
@@ -22,17 +24,10 @@ export default class login extends React.Component {
     this._loadInitialState().done();
   }
   _loadInitialState = async () => {
-    let value = await AsyncStorage.getItem("user", () => {
-      console.log("this worked");
-    });
+    var value = await AsyncStorage.getItem("user");
     if (value !== null) {
-      this.props.navigation("profile");
+      this.props.navigation.navigate("profile");
     }
-  };
-
-  goToMainScreen = () => {
-    const { navigate } = this.props.navigation;
-    navigate("Main");
   };
 
   render() {
@@ -56,12 +51,12 @@ export default class login extends React.Component {
               onChangeText={password => this.setState({ password })}
             />
 
-            <TouchableOpacity style={styles.btn} onPress={this.goToMainScreen}>
+            <TouchableOpacity style={styles.btn} onTouch={this.login}>
               <Text style={styles.text}>Log In</Text>
             </TouchableOpacity>
 
             <View style={styles.registerAndButton}>
-              <Text style={fontSize = 12}>Need an Account?</Text>
+              <Text style={"fontSize: 12"}>Need an Account?</Text>
 
               <TouchableOpacity style={styles.regBtn}>
                 <Text style={styles.text}>Register</Text>
@@ -69,7 +64,7 @@ export default class login extends React.Component {
             </View>
 
             <View style={styles.registerAndButton}>
-              <Text style={(fontSize = 12)}>Join our KnightHood?</Text>
+              <Text style={"fontSize: 12"}>Join our KnightHood?</Text>
 
               <TouchableOpacity style={styles.regBtn}>
                 <Text style={styles.text}>Learn More</Text>
@@ -81,29 +76,7 @@ export default class login extends React.Component {
     );
   }
   login = () => {
-    fetch("http://192.168.1.67:19000/users", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        username: this.state.username,
-        password: this.state.password
-      })
-
-        .then(response => response.json())
-        .then(res => {
-          if (res.success === true) {
-            AsyncStorage.setItem("user", res.user, () => {
-              console.log("User set");
-            });
-            this.props.navigate("Profile");
-          } else {
-            alert(res.message);
-          }
-        })
-    }).done();
+    alert("success!");
   };
 }
 
@@ -168,6 +141,7 @@ const styles = StyleSheet.create({
   },
 
   regBtn: {
+    backgroundColor: "#512FDB",
     alignSelf: "flex-end",
     backgroundColor: "#512FDB",
     padding: 5,

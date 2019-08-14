@@ -8,32 +8,55 @@ import {
     TouchableOpacity,
     AsyncStorage,
 } from 'react-native';
- 
 
 
 
-export default class register extends React.Component {
+export default class Register extends React.Component {
+
+
+    goToLoginScreen = () => {
+        const { navigate } = this.props.navigation;
+        navigate("Login");
+    };
+
+    goToMainScreen = () => {
+        const { navigate } = this.props.navigation;
+        navigate("Main");
+    };
+
+    goToFAQScreen = () =>{
+
+        const { navigate } = this.props.navigation;
+        navigate("FAQ");
+    };
+
 
     constructor(props){
         super(props);
         this.state  = {
-            username: '',
+            FirstName:'',
+            LastName: '',
+            Email:'',
             password: '',
+            confirmPassword:'',
+
         }
     }
 
-    componentDidMount(){
+
+
+    componentDidMount() {
         this._loadInitialState().done();
     }
-_loadInitialState = async () => {
-   
-    var value = await AsyncStorage.getItem('user');
-    if (value !== null){
-        this.props.navigation.navigate('profile');
+    _loadInitialState = async () => {
+        let value = await AsyncStorage.getItem("User",()=> {
+            console.log("hopefully this works")
+        });
+        if (value !== null){
+            this.props.navigation("profile");
 
-    }
-}
-
+        }
+    };
     render(){
         return(
             
@@ -54,32 +77,40 @@ _loadInitialState = async () => {
         
         <TextInput
             style= {styles.TextInput} placeholder ='FirstName'
+            onChangeText={(FirstName) => this.setState({ FirstName})}
          >
         </TextInput>
 
-        <TextInput style = {styles.TextInput} placeholder = 'LastName'>
+        <TextInput style = {styles.TextInput} placeholder = 'LastName'
+            onChangeText={(LastName) => this.setState({ LastName})}>
 
         </TextInput>
 
         <TextInput
             style= {styles.TextInput} placeholder ='Email'
+            onChangeText={(Email) => this.setState({ Email})}
          >
         </TextInput>
 
         <TextInput
             style= {styles.TextInput} placeholder ='Password'
+            onChangeText={(password) => this.setState({ password})}
+            secureTextEntry={true}
+
          >
         </TextInput>
 
         <TextInput
             style= {styles.TextInput} placeholder ='Confirm Password'
+            onChangeText={(confirmPassword) => this.setState({ confirmPassword})}
+            secureTextEntry={true}
          >
         </TextInput>
 
 
         <TouchableOpacity
         style = {styles.btn}
-        onPress= {this.login}>
+        onPress= {this.toMain}>
             <Text style={styles.text}>Register</Text>
 
 </TouchableOpacity>
@@ -91,7 +122,7 @@ _loadInitialState = async () => {
 
 <TouchableOpacity
         style = {styles.regBtn}
-        onPress= {this.login}>
+        onPress= {this.toLogin}>
             <Text style={styles.text}>Log in</Text>
 
 </TouchableOpacity>
@@ -105,7 +136,8 @@ _loadInitialState = async () => {
 
 <TouchableOpacity
         style = {styles.regBtn}
-        onPress= {this.login}>
+        onPress= {this.FAQ}
+>
             <Text style={styles.text}>Learn More</Text>
 
 </TouchableOpacity>
@@ -125,7 +157,37 @@ _loadInitialState = async () => {
             
     }
 
-   
+    toLogin = () => {
+
+        this.goToLoginScreen();
+
+
+
+    };
+
+    toMain = () => {
+        if ((this.state.FirstName.trim().length > 0)&&
+          (this.state.LastName.trim().length > 0)&&
+        (this.state.Email.trim().length > 0) &&
+          (this.state.password.trim().length > 0) &&
+          (this.state.confirmPassword.trim().length > 0)){
+            this.goToMainScreen()
+        }
+    else {
+    alert('Please fill all the requested information')
+        }
+
+
+
+
+
+    };
+
+    FAQ = () => {
+
+        this.goToFAQScreen();
+    };
+
 }
 
 const styles = StyleSheet.create({
@@ -198,7 +260,7 @@ topContainer:{
 
     regBtn: {
 
-        backgroundColor:  '#512FDB',
+
         alignSelf: 'flex-end',
         backgroundColor:  '#512FDB',
             padding: 5,

@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 const UserInfo = {username: 'Admin', password: 'test123'};
+const UserInfo2 = {username: 'JohnDoe69', password: 'test123'};
 
 
 
@@ -71,7 +72,7 @@ if (value !== null){
           <View style={styles.formContainer}>
 
 
-
+        <Text style ={styles.Labels}>Login:</Text>
 
             <TextInput
               style={styles.TextInput} placeholder='username'
@@ -79,7 +80,7 @@ if (value !== null){
 
             >
             </TextInput>
-
+            <Text style ={styles.Labels}>Password:</Text>
 
             <TextInput
               style={styles.TextInput} placeholder='password'
@@ -151,7 +152,8 @@ if (value !== null){
 
   }
   login = () => {
-    if(UserInfo.username === this.state.username && UserInfo.password === this.state.password){
+    if((UserInfo.username === this.state.username && UserInfo.password === this.state.password)||
+      (UserInfo2.username === this.state.username && UserInfo2.password === this.state.password)){
       alert('success!');
       this.goToMainScreen();
     }
@@ -170,6 +172,12 @@ if (value !== null){
     this.goToFAQScreen();
   };
 
+  toProfile = () => {
+
+    this.goToFAQScreen();
+  };
+
+
 }
 
 const styles = StyleSheet.create({
@@ -182,10 +190,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#512FDB',
     alignItems: 'flex-start'
 
-  }
+  },
+  Labels:{
+    fontSize: 14,
+    fontWeight: 'bold',
+    alignSelf: 'flex-start',
+    paddingLeft:10
 
-
-  ,
+  },
 
   formContainer: {
     flexWrap: 'wrap',

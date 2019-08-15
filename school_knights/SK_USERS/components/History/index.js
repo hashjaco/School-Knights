@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import { Text } from "react-native-elements";
 import { connect } from "react-redux";
-import { history } from "../../data/history";
+import "../../data/history";
 
 
 class History extends Component {
@@ -24,27 +24,7 @@ class History extends Component {
     };
 
 
-    this.renderList = () => {
-      // let image = item.imageSource;
-      let locations = history;
-      console.log(locations.history);
 
-      return (
-        locations.map(location => {
-          return (
-            <TouchableOpacity>
-              <Image
-                style={styles.image}
-                source={require("../../assets/Home-icon.png")}
-              />
-              <View style={styles.savedAddress}>
-                <Text style={styles.label}>{location.name}</Text>
-                <Text style={styles.address}>{location.address}</Text>
-              </View>
-            </TouchableOpacity>
-          );
-        }))
-      };
   }
 
   render() {
@@ -60,6 +40,29 @@ class History extends Component {
       </ScrollView>
     );
   }
+
+
+  renderList = () => {
+    // let image = item.imageSource;
+    let locations = history;
+    console.log(locations.history);
+
+    return (
+      locations.map(location => {
+        return (
+          <TouchableOpacity>
+            <Image
+              style={styles.image}
+              source={require("../../assets/Home-icon.png")}
+            />
+            <View style={styles.savedAddress}>
+              <Text style={styles.label}>{location.name}</Text>
+              <Text style={styles.address}>{location.address}</Text>
+            </View>
+          </TouchableOpacity>
+        );
+      }))
+  };
 }
 
 // The function takes data from the app current state,

@@ -8,10 +8,11 @@ import {
     TouchableOpacity,
     AsyncStorage,
     TouchableHighlight,
-    Image
+    Image,
+    ScrollView,
 } from 'react-native';
 import { Container } from 'native-base';
-import { ScrollView } from 'react-native-gesture-handler';
+
 
 
 
@@ -120,7 +121,7 @@ export default class Profile extends React.Component {
 
             </KeyboardAvoidingView>
 
-
+           
         );
 
     }

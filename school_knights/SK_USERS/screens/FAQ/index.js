@@ -2,6 +2,8 @@ import React from 'react'
 import { StyleSheet, Text, View } from "react-native";
 import { Icon } from "react-native-elements";
 import MenuToggle from "../../components/MenuToggle";
+import FAQSScreen from '../../components/drawerPages/FAQScreen'
+
 
 export default class FAQScreen extends React.Component {
   static navigationOptions = {
@@ -12,17 +14,15 @@ export default class FAQScreen extends React.Component {
     return (
       <View style={{ flex: 1, justifyContent: "top", alignItems: "left", marginTop: 20, marginLeft: 3 }}>
         <MenuToggle navigation={this.props.navigation}/>
-
-        <Text style={[styles.pagecontent]}>This is the FAQ Page</Text>
+        <FAQSScreen/>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  pagecontent: {
-    justifyContent: "center",
-    alignItems: "center",
+  pageContent: {
+    flex: 1, justifyContent: "top", alignItems: "left", marginTop: 20, marginLeft: 3
 
   }
 });

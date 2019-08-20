@@ -10,7 +10,7 @@ import dataReducer from "./DataReducer";
 import controlsReducer from "./ControlFieldReducer";
 import fieldReducer from "./InputFieldReducer"
 
-const reducers = () => {combineReducers({
+const rootReducer = () => {combineReducers({
   forms: FormReducer,
   users: userReducer,
   trips: tripReducer,
@@ -19,4 +19,4 @@ const reducers = () => {combineReducers({
   inputFields: fieldReducer
 })};
 
-export default reducers;
+export default rootReducer;

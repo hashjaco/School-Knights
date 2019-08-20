@@ -15,6 +15,7 @@
     "css-to-react-native": "^2.3.1",
     "expo": "^34.0.4",
     "expo-font": "~6.0.1",
+    "formik": "^1.5.8",
     "lodash": "^4.17.15",
     "native-base": "^2.13.4",
     "prettier": "^1.18.2",
@@ -34,8 +35,10 @@
     "react-navigation-drawer": "^2.0.0",
     "react-redux": "^7.1.0",
     "redux": "^4.0.4",
+    "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.0.0",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^6.0.0",

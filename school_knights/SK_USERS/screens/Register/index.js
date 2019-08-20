@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Button, Text, TouchableOpacity } from "react-native";
-import Form from '../../containers/Form';
+import RegistrationForm from '../../containers/RegistrationForm';
+import FormikRegistrationForm from '../../redux/Experimental/FormikRegistrationForm'
 
-export default class Login extends Component {
+export default class Register extends Component {
   goToMainScreen = () => {
     const { navigate } = this.props.navigation;
     navigate("Main");
@@ -12,7 +13,7 @@ export default class Login extends Component {
   render() {
     return (
       <TouchableOpacity>
-        <Form/>
+        <FormikRegistrationForm navigate={this.props.navigate}/>
       </TouchableOpacity>
     );
   }

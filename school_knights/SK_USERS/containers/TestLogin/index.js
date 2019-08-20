@@ -130,7 +130,6 @@ const styles = StyleSheet.create({
     width: 450,
     height: 150,
     backgroundColor: "#512FDB",
-    alignItems: "flex-start"
   },
   Labels: {
     fontSize: 14,
@@ -140,19 +139,16 @@ const styles = StyleSheet.create({
   },
 
   formContainer: {
-    flexWrap: "wrap",
+    flex: 1,
+    flexDirection: "column",
     paddingTop: 40,
     width: 300,
-    height: 500,
-    borderWidth: 1,
-    borderRadius: 10,
-    borderColor: "black",
+    // borderColor: "black",
     alignSelf: "center"
   },
 
   bottomContainer: {
     width: 400,
-    height: 650,
     backgroundColor: "white",
     alignSelf: "center"
   },

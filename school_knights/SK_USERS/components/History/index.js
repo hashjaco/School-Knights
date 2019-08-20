@@ -6,34 +6,34 @@ import {
   StyleSheet,
   ScrollView,
   Image,
-  FlatList,
   ActivityIndicator,
   TouchableOpacity
 } from "react-native";
 import { Text } from "react-native-elements";
 import { connect } from "react-redux";
-import "../../data/history";
-
 
 class History extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      location: ""
+      location: "",
+      isRendered: false,
     };
+  }
 
-
-
+  componentDidMount() {
+    this.setState({
+      isRendered: true
+    })
   }
 
   render() {
     return (
       <ScrollView
-        style={styles.fieldStyle}
         horizontal={true}
         decelerationRate={0}
-        snapToInterval={380}
+        snapToInterval={400}
         snapToAlignment={"center"}
       >
         {this.renderList()}
@@ -41,27 +41,23 @@ class History extends Component {
     );
   }
 
-
   renderList = () => {
     // let image = item.imageSource;
-    let locations = history;
-    console.log(locations.history);
-
-    return (
-      locations.map(location => {
-        return (
-          <TouchableOpacity>
-            <Image
-              style={styles.image}
-              source={require("../../assets/Home-icon.png")}
-            />
-            <View style={styles.savedAddress}>
-              <Text style={styles.label}>{location.name}</Text>
-              <Text style={styles.address}>{location.address}</Text>
-            </View>
-          </TouchableOpacity>
-        );
-      }))
+    let locations = require("../../data/history.json").history;
+    return locations.map((location, key) => {
+      return (
+        <TouchableOpacity style={styles.fieldStyle} key={key}>
+          <Image
+            style={styles.image}
+            source={require("../../assets/Home-icon.png")}
+          />
+          <View style={styles.savedAddress}>
+            <Text style={styles.label}>{location.name}</Text>
+            <Text style={styles.address}>{location.address}</Text>
+          </View>
+        </TouchableOpacity>
+      );
+    });
   };
 }
 
@@ -86,27 +82,26 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flex: 0.8,
     height: 80,
-    width: 380,
+    width: 400,
     backgroundColor: "transparent",
     // borderStyle: 'solid',
     // borderWidth: 2,
-    alignItems: "center",
-    marginTop: 20
+    marginTop: 40,
+    marginBottom: 20
   },
 
   image: {
-    marginRight: 18
+    marginRight: 18,
+    marginLeft: 18
   },
 
   savedAddress: {
-    flexDirection: "column"
+    flexDirection: "column",
   },
 
   label: {
     fontSize: 25,
     fontWeight: "600",
     marginBottom: 7
-  },
-
-  address: {}
+  }
 });

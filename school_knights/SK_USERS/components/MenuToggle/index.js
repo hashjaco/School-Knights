@@ -1,20 +1,39 @@
 import React, { Component } from "react";
 import { TouchableWithoutFeedback, StyleSheet, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { connect } from 'react-redux';
+import { bindActionCreators } from "redux";
+
 
 var isToggled = false;
 
-const MenuToggle = ({ navigation }) => {
-  return (
-    <Ionicons
-      name="md-menu"
-      color="#000"
-      size={45}
-      style={styles.menuIcon}
-      onPress={() => navigation.toggleDrawer()}
-    />
-  );
+class MenuToggle extends Component {
+
+  render() {
+    return (
+      <Ionicons
+        name="md-menu"
+        color="#000"
+        size={45}
+        style={styles.menuIcon}
+        onPress={() => navigation.toggleDrawer()}
+      />
+    );
+  }
+}
+
+const mapStateToProps = () => {
+  return {
+    ...state
+  };
 };
+
+const mapDispatchToProps = () => {
+  return {
+
+  }
+}
+
 
 const onPress = () => {};
 
@@ -42,4 +61,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default MenuToggle;
+export default connect()(MenuToggle);

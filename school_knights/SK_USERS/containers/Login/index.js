@@ -27,7 +27,7 @@ export default class TestLogin extends React.Component {
   goToRegisterScreen = () =>{
 
     const { navigate } = this.props.navigation;
-    navigate("LegalDisclaimer");
+    navigate("Register");
   };
 
   goToFAQScreen = () =>{
@@ -115,7 +115,6 @@ if (value !== null){
 
             </View>
 
-
             <View style={styles.registerAndButton}>
 
               <Text style={fontSize = 12}>Join our KnightHood?</Text>
@@ -200,22 +199,24 @@ const styles = StyleSheet.create({
   },
 
   formContainer: {
-    flexWrap: 'wrap',
+    flex: 1,
+    flexDirection: "column",
     paddingTop: 40,
     width: 300,
-    height: 500,
+    height: "auto",
     borderWidth: 1,
-    borderRadius: 10,
     borderColor: 'black',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    alignItems: 'center'
 
   },
 
   bottomContainer: {
     width: 400,
-    height: 650,
+    height: "auto",
     backgroundColor: 'white',
     alignSelf: 'center',
+    alignItems: 'center'
   },
 
   header: {

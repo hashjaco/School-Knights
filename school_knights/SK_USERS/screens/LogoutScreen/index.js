@@ -1,28 +1,16 @@
-import React from 'react'
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Icon } from "react-native-elements";
 import MenuToggle from "../../components/MenuToggle";
-import Login from '../../containers/Login';
+import Login from "../../containers/Login";
 
-export default class LogoutScreen extends React.Component {
-  static navigationOptions = {
-    drawerLabel: "Logout"
-
-  };
-
-  render() {
-    return (
-      <View >
-        <Login/>
-      </View>
-    );
-  }
-}
-
+const LogoutScreen = ({ navigation }) => {
+  return navigation.navigate("Login");
+};
+export default LogoutScreen
 const styles = StyleSheet.create({
   pagecontent: {
     justifyContent: "center",
-    alignItems: "center",
-
+    alignItems: "center"
   }
 });

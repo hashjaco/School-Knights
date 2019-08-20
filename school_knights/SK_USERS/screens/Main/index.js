@@ -3,6 +3,8 @@ import { StyleSheet, View } from "react-native";
 import MapSection from "../../containers/MapSection";
 import ControlSection from "../../containers/ControlSection";
 import MenuToggle from "../../components/MenuToggle";
+import { connect} from "react-redux"
+import { bindActionCreators} from "redux";
 
 const styles = StyleSheet.create({
   container: {
@@ -13,18 +15,24 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class Main extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+class Main extends Component {
   render() {
     return (
       <View style={styles.container}>
-<MapSection/>
-        <MenuToggle navigation={this.props.navigation} />
-       <ControlSection/>
+        <MapSection />
+        <MenuToggle />
+       <ControlSection />
       </View>
     );
   }
 }
+
+// const mapStateToProps = state => ({
+//         ...state
+// )}
+
+// const mapDispatchToProps = dispatch => {
+//
+// }
+
+export default Main;

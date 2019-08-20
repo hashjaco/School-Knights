@@ -1,10 +1,8 @@
 import { LOG_IN } from "./actionTypes";
 
-export const logIn = user => {
-  return dispatch => {
-    //Make API Call
-    setTimeout(() => {
-      dispatch({ type: LOG_IN, data: user });
-    }, 2000);
-  };
+export const logIn = userDetails => dispatch => {
+  //Make API Call
+  setTimeout(() => {
+    dispatch({ type: LOG_IN, payload: userDetails });
+  }, 2000);
 };

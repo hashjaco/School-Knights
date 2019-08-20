@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, TouchableOpacity } from "react-native";
 import TestLogin from '../../containers/TestLogin';
+import FormikRegistrationForm from "../../redux/Experimental/FormikRegistrationForm";
 
 
 

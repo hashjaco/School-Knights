@@ -3,19 +3,20 @@ import { Dimensions, Platform } from "react-native";
 import { createAppContainer, createDrawerNavigator } from "react-navigation";
 import Main from "../../screens/Main";
 import Login from "../../containers/Login";
-import Form from "../../containers/Form";
+import Form from "../../containers/RegistrationForm";
+import Registration from "../../redux/Experimental/FormikRegistrationForm";
 import ApplyScreen from "../../screens/ApplyScreen";
 import FAQScreen from "../../screens/FAQ";
 import LogoutScreen from "../../screens/LogoutScreen";
 import AccountInformationScreen from "../../screens/AccountInformation";
-import faqHomeScreen from '../../screens/faqHomeScreen';
+import Hidden from "../../screens/Hidden";
 
 const WIDTH = Dimensions.get("window").width;
 
 const DrawerConfig = {
   drawerPosition: "left",
-  initialRouteName: "Rewards",
-   drawerBackgroundColor: "#512FDB",
+  initialRouteName: "Login",
+  drawerBackgroundColor: "#512FDB",
   drawerWidth: WIDTH * 0.83
 };
 
@@ -24,7 +25,9 @@ const DrawerNavigator = createDrawerNavigator(
     Login: {
       screen: Login,
       navigationOptions: ({ navigation }) => ({
-        header: null
+        header: null,
+        drawerLabel: <Hidden />,
+        swipeEnabled: false
       })
     },
     Home: {
@@ -45,18 +48,16 @@ const DrawerNavigator = createDrawerNavigator(
     },
 
     FAQ: {
-      screen: FAQScreen
-    },
-    LegalDisclaimer:{
-      screen: Form,
-      navigationOptions: ({ navigation }) => ({
-        header: null
+      screen: FAQScreen,
+      navigationOptions: navigationOptionsContainer => ({
+        swipeEnabled: false
       })
     },
-    Rewards: {
-      screen: Login,
+    Register: {
+      screen: Registration,
       navigationOptions: ({ navigation }) => ({
-        header: null
+        header: null,
+        swipeEnabled: false
       })
     },
     Logout: {
@@ -64,7 +65,7 @@ const DrawerNavigator = createDrawerNavigator(
       navigationOptions: ({ navigation }) => ({
         header: null
       })
-    },
+    }
   },
   DrawerConfig
 );

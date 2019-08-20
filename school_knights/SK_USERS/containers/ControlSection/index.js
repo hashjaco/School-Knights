@@ -13,81 +13,18 @@ import EmergencyButton from "../../components/EmergencyButton";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { changeFieldColors, slideDown, slideUp } from "../../redux/actions";
+import Scheduler from "../../components/Scheduler";
 
 class ControlSection extends Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      destination: "",
-      pickUpLocation: "",
-      pickUpTime: "",
-      isMounted: false,
-      isActive: false,
-      animatedController: {
-        height: "35%",
-        position: "absolute",
-        // flex: 1,
-        // flexDirection: "column",
-        width: "100%",
-        bottom: 0,
-        alignItems: "flex-end",
-        borderTopWidth: 1
-      }
-    };
-  }
-
-  componentDidMount() {
-    this.setState({
-      isMounted: true
-    });
-  }
-
-  _slideUp = () => {
-    if (this.state.isMounted) {
-      this.setState({...state,
-        isActive: !this.state.isActive
-      });
-      if (this.state.isActive === true) {
-        LayoutAnimation.configureNext(LayoutAnimation.Presets.spring, () => {
-          console.log("animation ended");
-        });
-        this.setState({ ...state,
-          animationController: {
-            height: "50%",
-            position: "absolute",
-            flex: 1,
-            flexDirection: "column",
-            width: "100%",
-            bottom: 0,
-            alignItems: "flex-end",
-            borderTopWidth: 1
-          }
-        });
-      } else {
-        this.setState({ ...state,
-          height: "35%"
-        });
-      }
-    }
-  };
-
-  animatedContainer = {
-    position: "absolute",
-    // flex: 1,
-    // flexDirection: "column",
-    width: "100%",
-    bottom: 0,
-    alignItems: "flex-end",
-    borderTopWidth: 1
-  };
 
   render() {
     return (
-      <View style={this.animatedContainer}>
+      <View style={styles.container}>
         <EmergencyButton style={styles.button} />
         <View style={styles.container}>
-          <InputField value="myTrip" onPress={this._slideUp} />
+          <InputField />
+          <Scheduler />
           <History />
         </View>
       </View>
@@ -114,7 +51,7 @@ const mapDispatchToProps = dispatch => {
 
 const styles = StyleSheet.create({
   container: {
-    position: "relative",
+    position: "absolute",
     flex: 1,
     flexDirection: "column",
     height: "25%",
@@ -130,10 +67,8 @@ const styles = StyleSheet.create({
   button: {
     position: "relative",
     borderRadius: 1,
-    bottom: 30
+    bottom: 30,
+    alignSelf: "flex-end"
   }
 });
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ControlSection);
+export default connect(mapStateToProps, mapDispatchToProps)(ControlSection);

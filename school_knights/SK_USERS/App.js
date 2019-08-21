@@ -3,7 +3,7 @@ import { StyleSheet, ProgressViewIOS } from "react-native";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
-import DrawerNavigator from "./components/DrawerNavigator";
+import Navigation from "./components/DrawerNavigator";
 import reducers from "./redux/reducers";
 import { useScreens } from "react-native-screens";
 import { Asset } from "expo-asset";
@@ -11,12 +11,10 @@ import { AppLoading } from "expo";
 import store from "./store";
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+
+    state = {
       isReady: false
-    }
-  }
+    };
 
   render() {
     useScreens();
@@ -32,7 +30,7 @@ export default class App extends Component {
 
     return (
       <Provider store={store}>
-        <DrawerNavigator />
+        <Navigation />
       </Provider>
     );
   }

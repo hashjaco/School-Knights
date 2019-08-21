@@ -1,5 +1,5 @@
 import React from "react";
-import { LOG_IN, LOG_OUT } from "../actions/actionTypes";
+import { LOG_IN, LOG_OUT, REGISTER } from "../actions/actionTypes";
 
 const initialState = {
   id: null,

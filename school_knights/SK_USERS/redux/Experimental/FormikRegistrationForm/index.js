@@ -1,5 +1,5 @@
 import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik/dist/index";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
 import {
   StyleSheet,

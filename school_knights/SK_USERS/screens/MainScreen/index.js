@@ -4,7 +4,7 @@ import MapSection from "../../containers/MapSection";
 import ControlSection from "../../containers/ControlSection";
 import MenuToggle from "../../components/MenuToggle";
 import { connect} from "react-redux"
-import { bindActionCreators} from "redux";
+import { bindActionCreators } from "redux";
 
 const styles = StyleSheet.create({
   container: {
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   }
 });
 
-class Main extends Component {
+class MainScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -27,12 +27,12 @@ class Main extends Component {
   }
 }
 
-// const mapStateToProps = state => ({
-//         ...state
-// )}
+const mapStateToProps = state => ({
+    ...state
+});
 
-// const mapDispatchToProps = dispatch => {
-//
-// }
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({}, dispatch)
+};
 
-export default Main;
+export default connect(mapStateToProps, mapDispatchToProps)(MainScreen);

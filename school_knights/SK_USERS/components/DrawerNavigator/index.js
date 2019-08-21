@@ -1,9 +1,11 @@
 import React from "react";
 import { Dimensions, Platform } from "react-native";
-import { createAppContainer, createDrawerNavigator } from "react-navigation";
-import Main from "../../screens/Main";
+import {
+  createAppContainer,
+  createDrawerNavigator,
+} from "react-navigation";
+import MainScreen from "../../screens/MainScreen";
 import Login from "../../containers/Login";
-import Form from "../../containers/RegistrationForm";
 import Registration from "../../redux/Experimental/FormikRegistrationForm";
 import ApplyScreen from "../../screens/ApplyScreen";
 import FAQScreen from "../../screens/FAQ";
@@ -24,15 +26,15 @@ const DrawerNavigator = createDrawerNavigator(
   {
     Login: {
       screen: Login,
-      navigationOptions: ({ navigation }) => ({
+      navigationOptions: () => ({
         header: null,
         drawerLabel: <Hidden />,
         swipeEnabled: false
       })
     },
     Home: {
-      screen: Main,
-      navigationOptions: ({ navigation }) => ({
+      screen: MainScreen,
+      navigationOptions: () => ({
         header: null
       })
     },
@@ -42,27 +44,27 @@ const DrawerNavigator = createDrawerNavigator(
 
     Apply: {
       screen: ApplyScreen,
-      navigationOptions: ({ navigation }) => ({
+      navigationOptions: () => ({
         header: null
       })
     },
 
     FAQ: {
       screen: FAQScreen,
-      navigationOptions: navigationOptionsContainer => ({
+      navigationOptions: () => ({
         swipeEnabled: false
       })
     },
     Register: {
       screen: Registration,
-      navigationOptions: ({ navigation }) => ({
+      navigationOptions: () => ({
         header: null,
         swipeEnabled: false
       })
     },
     Logout: {
       screen: LogoutScreen,
-      navigationOptions: ({ navigation }) => ({
+      navigationOptions: () => ({
         header: null
       })
     }
@@ -70,4 +72,6 @@ const DrawerNavigator = createDrawerNavigator(
   DrawerConfig
 );
 
-export default createAppContainer(DrawerNavigator);
+let Navigation = createAppContainer(DrawerNavigator);
+
+export default Navigation;

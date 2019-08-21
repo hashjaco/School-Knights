@@ -3,7 +3,7 @@
 // array will be passed to the application index as state
 
 import { combineReducers } from "redux";
-import FormReducer from "./FormReducer";
+import formReducer from "./FormReducer";
 import userReducer from "./UserReducer";
 import tripReducer from "./TripReducer";
 import dataReducer from "./DataReducer";
@@ -11,7 +11,7 @@ import controlsReducer from "./ControlFieldReducer";
 import fieldReducer from "./InputFieldReducer"
 
 const rootReducer = () => {combineReducers({
-  forms: FormReducer,
+  forms: formReducer,
   users: userReducer,
   trips: tripReducer,
   data: dataReducer,

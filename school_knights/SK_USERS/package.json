@@ -33,14 +33,18 @@
     "react-native-web": "^0.11.4",
     "react-navigation": "^3.11.1",
     "react-navigation-drawer": "^2.0.0",
+    "react-navigation-redux-helpers": "^3.0.2",
     "react-redux": "^7.1.0",
     "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",
     "whatwg-fetch": "^3.0.0",
-    "yup": "^0.27.0"
+    "yup": "^0.27.0",
+    "expo-asset": "latest"
   },
   "devDependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "babel-preset-expo": "^6.0.0",
     "json-loader": "^0.5.7",
     "webpack": "^4.39.2"

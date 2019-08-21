@@ -5,13 +5,10 @@ import thunk from "redux-thunk";
 import { createStore, applyMiddleware } from "redux";
 import rootReducer from "./redux/reducers";
 
-const initialState = {};
-
 const middleware = [thunk];
 
 const store = createStore(
   rootReducer,
-  initialState,
   applyMiddleware(...middleware)
 );
 

@@ -30,7 +30,7 @@ export const REFRESH = "REFRESH";
 
 export const CONTROL_SECTION_ACTIVE = "CONTROL_SECTION_ACTIVE";
 
-export const MATCH_FOUND = "MATCH_FOUND";
+export const FIND_MATCH = "FIND_MATCH";
 
 export const SCHEDULE_TRIP = "SCHEDULE_TRIP";
 
@@ -41,3 +41,5 @@ export const WAIT_FOR_MATCH = "WAIT_FOR_MATCH";
 export const CONFIRM_EMERGENCY = "CONFIRM_EMERGENCY";
 
 export const REGISTER = "REGISTER";
+
+export const TOGGLE_MENU = "TOGGLE_MENU";

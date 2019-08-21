@@ -1,8 +1,9 @@
 import { LOG_IN } from "./actionTypes";
+import store from "../../store";
 
-export const logIn = userDetails => dispatch => {
-  //Make API Call
-  setTimeout(() => {
-    dispatch({ type: LOG_IN, payload: userDetails });
-  }, 2000);
+const logIn = {
+  type: LOG_IN,
+  payload: { user: "Hashim" }
 };
+
+store.dispatch(logIn);

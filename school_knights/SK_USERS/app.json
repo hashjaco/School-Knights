@@ -11,9 +11,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/SchoolKnightsLogo3.png",
+    "icon": "./src/assets/cartoon-head-lopper-illustration-cool-wolf-wolf-knight.jpg",
     "splash": {
-      "image": "./src/assets/wetrumpedall.png",
+      "image": "./src/assets/cartoon-head-lopper-illustration-cool-wolf-wolf-knight.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

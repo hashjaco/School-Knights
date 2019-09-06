@@ -1,22 +1,25 @@
 import React, { Component } from "react";
-import { StyleSheet, ProgressViewIOS } from "react-native";
-import thunk from "redux-thunk";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import Navigation from "./components/DrawerNavigator";
-import reducers from "./redux/reducers";
+import { bindActionCreators} from "redux";
+import Navigation from "./src/components/DrawerNavigator";
 import { useScreens } from "react-native-screens";
 import { Asset } from "expo-asset";
 import { AppLoading } from "expo";
-import store from "./store";
+import * as actions from './src/redux/actions'
+import configureStore from './store'
+import * as AppRegistry from "react-native";
+
+
+const actionCreators = bindActionCreators(actions);
 
 export default class App extends Component {
+  state = {
+    isReady: false
+  };
 
-    state = {
-      isReady: false
-    };
 
   render() {
+    const store = configureStore();
     useScreens();
     if (!this.state.isReady) {
       return (
@@ -27,16 +30,16 @@ export default class App extends Component {
         />
       );
     }
-
     return (
       <Provider store={store}>
-        <Navigation />
+        <Navigation actions={actionCreators}/>
+        {console.log(store.getState())}
       </Provider>
     );
   }
 
   async _cacheResourcesAsync() {
-    const images = [require("./assets/SchoolKnightsLogo3.png")];
+    const images = [require("./src/assets/SchoolKnightsLogo3.png")];
 
     const cacheImages = images.map(image => {
       return Asset.fromModule(image).downloadAsync();
@@ -44,12 +47,3 @@ export default class App extends Component {
     return Promise.all(cacheImages);
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    // flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});

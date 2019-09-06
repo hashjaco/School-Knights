@@ -11,9 +11,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/SchoolKnightsLogo3.png",
+    "icon": "./src/assets/SchoolKnightsLogo3.png",
     "splash": {
-      "image": "./assets/SchoolKnightsLogo3.png",
+      "image": "./src/assets/wetrumpedall.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

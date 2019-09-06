@@ -2,14 +2,22 @@
 // Newly created array will be stored here
 import React from "react";
 import thunk from "redux-thunk";
-import { createStore, applyMiddleware } from "redux";
-import rootReducer from "./redux/reducers";
+import {createStore, applyMiddleware, compose} from "redux";
+import rootReducer from "./src/redux/reducers";
+import axios from 'axios';
+import axiosMiddleware from 'redux-axios-middleware';
+
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+
 
 const middleware = [thunk];
 
-const store = createStore(
-  rootReducer,
-  applyMiddleware(...middleware)
-);
-
-export default store;
+export default function configureStore(initialState={}) {
+    return createStore(
+        rootReducer,
+        initialState,
+        composeEnhancers(applyMiddleware(...middleware))
+    );
+}

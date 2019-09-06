@@ -1,42 +1,49 @@
 import React, { Component } from "react";
-import { StyleSheet, ProgressViewIOS } from "react-native";
-import thunk from "redux-thunk";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import DrawerNavigator from "./components/DrawerNavigator2"
-import reducers from "./redux/reducers";
+import { bindActionCreators} from "redux";
+import Navigation from "./src/components/DrawerNavigator";
 import { useScreens } from "react-native-screens";
+import { Asset } from "expo-asset";
+import { AppLoading } from "expo";
+import * as actions from './src/redux/actions'
+import configureStore from './store'
+import * as AppRegistry from "react-native";
+
+
+const actionCreators = bindActionCreators(actions);
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.store = createStore(reducers, applyMiddleware(thunk));
+  state = {
+    isReady: false
+  };
 
-    this.state = {
-      isReady: false
-    }
-  }
-
-
-  async componentDidMount() {
-    this.setState({ isReady: true });
-    useScreens();
-  }
 
   render() {
+    const store = configureStore();
+    useScreens();
+    if (!this.state.isReady) {
+      return (
+        <AppLoading
+          startAsync={this._cacheResourcesAsync}
+          onFinish={() => this.setState({ isReady: true })}
+          onError={console.warn}
+        />
+      );
+    }
     return (
-      <Provider store={this.store}>
-        {this.state.isReady ? <DrawerNavigator /> : <ProgressViewIOS/> }
+      <Provider store={store}>
+        <Navigation actions={actionCreators}/>
+        {console.log(store.getState())}
       </Provider>
     );
   }
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+  async _cacheResourcesAsync() {
+    const images = [require("./src/assets/SchoolKnightsLogo3.png")];
+
+    const cacheImages = images.map(image => {
+      return Asset.fromModule(image).downloadAsync();
+    });
+    return Promise.all(cacheImages);
   }
-});
+}

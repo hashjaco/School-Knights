@@ -1,8 +1,8 @@
 import React from "react";
 
-import Login from "../screens/Login";
-import Main from "../screens/Main";
-import FAQ from "../screens/FAQ";
+import Login from "../src/screens/LoginScreen";
+import Main from "../src/screens/MainScreen";
+import FAQ from "../src/screens/FAQScreen";
 
 export const Screens = TabNavigator({
   Login: { screen: Login},

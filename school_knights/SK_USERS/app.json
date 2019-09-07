@@ -11,9 +11,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/cartoon-head-lopper-illustration-cool-wolf-wolf-knight.jpg",
+    "icon": "./src/assets/clipart-knight-4.png",
     "splash": {
-      "image": "./src/assets/cartoon-head-lopper-illustration-cool-wolf-wolf-knight.jpg",
+      "image": "./src/assets/clipart-knight-4.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

@@ -7,8 +7,6 @@ import { Asset } from "expo-asset";
 import { AppLoading } from "expo";
 import * as actions from './src/redux/actions'
 import configureStore from './store'
-import * as AppRegistry from "react-native";
-
 
 const actionCreators = bindActionCreators(actions);
 
@@ -39,7 +37,7 @@ export default class App extends Component {
   }
 
   async _cacheResourcesAsync() {
-    const images = [require("./src/assets/SchoolKnightsLogo3.png")];
+    const images = [require("./src/assets/cartoon-head-lopper-illustration-cool-wolf-wolf-knight.png")];
 
     const cacheImages = images.map(image => {
       return Asset.fromModule(image).downloadAsync();

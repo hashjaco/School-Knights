@@ -1,5 +1,5 @@
 import React from "react";
-import { LOG_IN, LOG_OUT, REGISTER } from "../actions/actionTypes";
+import { GET_HISTORY, LOG_IN, LOG_OUT, CREATE_ACCOUNT } from "../actions/actionTypes";
 import { connect } from "react-redux"
 
 const INITIAL_STATE = {
@@ -27,11 +27,16 @@ const userReducer = (state = INITIAL_STATE, action, props) => {
         emailAddress: null,
         password: null
       };
-    case REGISTER:
+    case CREATE_ACCOUNT:
       return {
         ...state,
         userDetails: action.payload
       };
+    case GET_HISTORY:
+      const locations = require("../../data/history.json").history;
+      return Object.assign({}, state, {
+        history: action.payload
+      })
     default:
       return state;
   }

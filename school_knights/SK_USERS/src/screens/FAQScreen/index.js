@@ -5,10 +5,6 @@ import MenuToggle from "../../components/MenuToggle";
 import FAQSScreen from "../../components/drawerPages/FAQScreen";
 
 export default class FAQScreen extends React.Component {
-  static navigationOptions = {
-    drawerLabel: "FAQ"
-  };
-
   render() {
     return (
       <View

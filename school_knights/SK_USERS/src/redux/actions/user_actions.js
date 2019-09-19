@@ -14,3 +14,4 @@ export const registerUser = payload => ({
   type: REGISTER,
   payload
 });
+

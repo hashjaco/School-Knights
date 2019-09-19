@@ -19,7 +19,9 @@ import {
   GET_DATA,
   UPDATE_VALUE,
   CONFIRM_EMERGENCY,
-  TOGGLE_SWITCH
+  TOGGLE_SWITCH,
+  GET_HISTORY,
+  MATCH_FOUND
 } from "./actionTypes";
 
 export const activateAlarm = values => {
@@ -29,6 +31,10 @@ export const activateAlarm = values => {
 export const getData = values => {
   return { type: GET_DATA, payload: values };
 };
+
+export const getHistory = values => {
+  return { type: GET_HISTORY, payload: values }
+}
 
 export const changeFieldColors = values => {
   return { type: CHANGE_FIELD_COLORS, payload: values };

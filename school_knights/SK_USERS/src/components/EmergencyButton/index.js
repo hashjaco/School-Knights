@@ -1,19 +1,16 @@
 import React, { Component } from "react";
-import { connect } from 'react-redux'
-import { View, Image, TouchableHighlight, StyleSheet } from "react-native";
+import { connect } from "react-redux";
+import { View, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { activateAlarm } from "../../redux/actions";
 
 class EmergencyButton extends Component {
-
   render() {
     return (
-      <TouchableHighlight style={styles.button}>
-          <Image
-            source={
-              require('../../assets/EmergencyButton.png')
-            }
-          />
-      </TouchableHighlight>
+      <TouchableOpacity style={styles.button}>
+        <View>
+          <Image source={require("../../assets/EmergencyButton.png")} />
+        </View>
+      </TouchableOpacity>
     );
   }
 }
@@ -21,12 +18,12 @@ class EmergencyButton extends Component {
 const mapStateToProps = state => {
   return {
     ...state
-  }
+  };
 };
 
 const styles = StyleSheet.create({
   button: {
-    position: "absolute",
+    position: "relative",
     height: "15%",
     width: "15%"
   }

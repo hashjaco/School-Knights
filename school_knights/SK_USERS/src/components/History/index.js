@@ -8,28 +8,31 @@ import {
   Image,
   TouchableOpacity,
   Dimensions,
-  Text
+  Text,
+  FlatList
 } from "react-native";
+const extractKey = ({ id }) => id;
 
 class History extends Component {
+  constructor(props) {
+    super(props);
+  }
   width = Dimensions.get("window").width;
-
+  data = this.props.history;
   render() {
     return (
       <>
-        <ScrollView
+        <FlatList
           horizontal={true}
-          decelerationRate={0}
-          snapToInterval={400}
-          snapToAlignment={"center"}
-        >
-          {this._renderList()}
-        </ScrollView>
+          data={this.data}
+          keyExtractor={extractKey}
+          renderItem={this._renderList}
+        />
       </>
     );
   }
 
-  _renderList = () => {
+  _renderList = ({ item }) => {
     // let image = item.imageSource;
     const locations = require("../../data/history.json").history;
 
@@ -50,26 +53,13 @@ class History extends Component {
   };
 }
 
-// The function takes data from the app current state,
-// and insert/links it into the props of our component.
-// This function makes Redux know that this component needs to be passed a piece of the state
-// const mapStateToProps = state => {
-//   return {
-//     ...state
-//   }
-// };
-
-// Doing this merges our actions into the component’s props,
-// while wrapping them in dispatch() so that they immediately dispatch an Action.
-// Just by doing this, we will have access to the actions defined in out actions file (action/home.js)
-
 export default History;
 
 const styles = StyleSheet.create({
   fieldStyle: {
-    display: "flex",
-    flexDirection: "row",
-    flex: 1,
+    // display: "flex",
+    // flexDirection: "row",
+    // flex: 1,
     // height: 30,
     width: "100%",
     backgroundColor: "transparent",

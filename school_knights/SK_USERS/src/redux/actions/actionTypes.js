@@ -24,6 +24,8 @@ export const SET_PICKUP_TIME = "SET_TIME";
 
 export const GET_DATA = "GET_DATA";
 
+export const GET_HISTORY = "GET_HISTORY";
+
 export const SET_ACTIVE = "SET_ACTIVE";
 
 export const REFRESH = "REFRESH";
@@ -40,7 +42,7 @@ export const WAIT_FOR_MATCH = "WAIT_FOR_MATCH";
 
 export const CONFIRM_EMERGENCY = "CONFIRM_EMERGENCY";
 
-export const REGISTER = "REGISTER";
+export const CREATE_ACCOUNT = "CREATE_ACCOUNT";
 
 export const TOGGLE_MENU = "TOGGLE_MENU";
 
@@ -49,3 +51,7 @@ export const TOGGLE_SWITCH = "TOGGLE_SWITCH";
 export const APP_IS_READY = "APP_IS_READY";
 
 export const UPDATE_VALUE = "UPDATE_VALUE";
+
+export const MATCH_FOUND = "MATCH_FOUND";
+
+export const UPDATE_CURR_LOCATION = "UPDATE_CURR_LOCATION";

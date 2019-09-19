@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Text, View, Image, StyleSheet, Button } from "react-native";
 
 
-export class FAQSScreen extends Component {
+export default class FAQSScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -86,5 +86,3 @@ const styles = StyleSheet.create({
     marginBottom: 7
   }
 });
-
-export default FAQSScreen;

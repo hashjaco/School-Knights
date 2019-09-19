@@ -1,27 +1,29 @@
 import React, { Component } from "react";
 import {
   View,
-  StyleSheet,
-  NativeModules,
-  LayoutAnimation,
-  Animated,
-  Dimensions
+  StyleSheet
 } from "react-native";
 import InputField from "../InputField";
 import History from "../../components/History";
 import EmergencyButton from "../../components/EmergencyButton";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import * as actions from "../../redux/actions";
+import { slideUp, slideDown, controlSectionActive } from "../../redux/actions";
 import Scheduler from "../../components/Scheduler";
 
 class ControlSection extends Component {
+
+  onPress = () => {
+
+  }
+
   render() {
     return (
       <View style={styles.animatedContainer}>
-        <EmergencyButton style={styles.button} />
+        <View style={{ position: "absolute", width: "25%", right: 0, bottom: 250 }}>
+          <EmergencyButton />
+        </View>
         <View style={styles.container}>
-          <InputField />
+          <InputField onPress={this.onPress}/>
           {/*<Scheduler />*/}
           <History />
         </View>
@@ -36,13 +38,6 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return bindActionCreators(
-      actions,
-    dispatch
-  );
-};
-
 const styles = StyleSheet.create({
   container: {
     position: "absolute",
@@ -53,26 +48,29 @@ const styles = StyleSheet.create({
     backgroundColor: "#FCFCFC",
     borderColor: "#000",
     borderWidth: 1,
-    borderRadius: 10,
+    borderTopStartRadius: 50,
+    borderTopEndRadius: 50,
     bottom: 0,
     alignItems: "center"
   },
 
   animatedContainer: {
-    position: "relative",
     flex: 1,
     flexDirection: "column",
-    // height: "35%",
+    height: "50%",
     width: "100%",
     bottom: 0,
-    alignItems: "flex-end",
+    // justifyContent: "flex-end",
     borderTopWidth: 1
   },
 
   button: {
     position: "relative",
-    borderRadius: 1,
-    bottom: 30
+    borderRadius: 50,
+    right: 0
   }
 });
-export default connect(mapStateToProps, mapDispatchToProps)(ControlSection);
+export default connect(
+  mapStateToProps,
+  null
+)(ControlSection);

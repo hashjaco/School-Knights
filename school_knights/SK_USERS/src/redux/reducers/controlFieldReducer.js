@@ -1,6 +1,7 @@
-import { CONTROL_SECTION_ACTIVE, CONFIRM_TRIP, SCHEDULE_TRIP, WAIT_FOR_MATCH, MATCH_FOUND } from "../actions/actionTypes";
+import { CONTROL_SECTION_ACTIVE, CONFIRM_TRIP, SCHEDULE_TRIP, WAIT_FOR_MATCH, MATCH_FOUND, GET_HISTORY } from "../actions/actionTypes";
 
 let initialState = {
+  height: "25%",
   scheduleTrip: false,
   confirmTrip: false,
   waitForMatch: false,
@@ -31,6 +32,7 @@ const controlsReducer = (state = initialState, action) => {
       return Object.assign({}, state, {
         matchFound: action.payload
       });
+
     default:
       return state;
   }

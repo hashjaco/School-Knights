@@ -9,31 +9,38 @@ import {
   resetFieldColors
 } from "../../redux/actions";
 
-import {View, StyleSheet, TouchableOpacity, TextInput} from "react-native";
+import { View, StyleSheet, TouchableOpacity, TextInput } from "react-native";
 
 class InputField extends Component {
   constructor(props) {
     super(props);
-
-    this.onPress = this.onPress.bind(this)
+    this.onPress = this.onPress.bind(this);
   }
 
   onPress = () => {
+    changeFieldColors("#FFF");
+  };
 
-  }
+  handleSubmit = value => {
+    if (this.props.destination === "") {
+      this.setDestination(value);
+    } else {
+      this.setLocation(value);
+    }
+  };
 
   render() {
     return (
       <TouchableOpacity style={styles.fieldStyle}>
         <TextInput
-            style={styles.inputStyle}
-            color={this.props.textColor}
-            placeholder={this.props.placeholder}
-            placeholderColor="#C9B132"
-            value={this.props.value}
-            onPress={this.onPress}
-            onChangeText={value => this.onChangeText(value)}
-            onSubmit={value => this.handleSubmit(value)}
+          style={styles.inputStyle}
+          color={this.props.fontColor}
+          placeholder={this.props.placeholder}
+          placeholderColor="#C9B132"
+          value={this.props.value}
+          onPress={this.onPress}
+          onChangeText={value => this.onChangeText(value)}
+          onSubmit={value => this.handleSubmit(value)}
         />
       </TouchableOpacity>
     );
@@ -46,29 +53,19 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return bindActionCreators(
-    {
-      setActive,
-      setLocation,
-      setDestination,
-      changeFieldColors,
-      resetFieldColors
-    },
-    dispatch
-  );
-};
-
 const styles = StyleSheet.create({
   fieldStyle: {
-    height: 78,
-    width: 380,
+    height: 70,
+    width: "90%",
     backgroundColor: "#8E3B9B",
-    borderRadius: 15,
+    borderRadius: 50,
+    borderColor: "#000",
+    borderWidth: 1,
     shadowColor: "black",
-    shadowOpacity: 1,
-    shadowOffset: { width: 3, height: 5 },
-    elevation: 3,
+    opacity: 1.2,
+    shadowOpacity: 3,
+    shadowOffset: { width: 1, height: 1 },
+    elevation: 1,
     top: 15,
     justifyContent: "center"
   },
@@ -82,4 +79,13 @@ const styles = StyleSheet.create({
   }
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(InputField);
+export default connect(
+  mapStateToProps,
+  {
+    setActive,
+    setDestination,
+    setLocation,
+    changeFieldColors,
+    resetFieldColors
+  }
+)(InputField);

@@ -5,6 +5,9 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
 class MenuToggle extends Component {
+  constructor(props){
+    super(props)
+  }
   render() {
     return (
       <Ionicons

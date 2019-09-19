@@ -15,7 +15,7 @@
     "splash": {
       "image": "./src/assets/clipart-knight-4.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

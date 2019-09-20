@@ -1,29 +1,40 @@
 import {
-  CHANGE_FIELD_COLORS,
-  RESET_FIELD_COLORS
+  SET_ACTIVE,
+  RESET_FIELD_COLORS,
+  UPDATE_VALUE
 } from "../actions/actionTypes";
 
 let initialState = {
+  placeholder: "",
+  placeholderTextColor: "",
   fillColor: "#8E3B9B",
   fontColor: "#C9B132",
-  isActive: false
+  isActive: false,
+  input: ""
 };
 
 const fieldReducer = (state = initialState, action) => {
   switch (action.type) {
-    case CHANGE_FIELD_COLORS:
-      state = {
+    case SET_ACTIVE:
+      return {
         ...state,
-        fontColor: action.data,
-        fillColor: action.data
+        fontColor: "#000",
+        fillColor: "#FFF"
       };
-      return state;
     case RESET_FIELD_COLORS:
-      state = { ...state, state };
-      return state;
+      return {
+        ...state,
+        fillColor: initialState.fillColor,
+        fontColor: initialState.fontColor
+      };
+    case UPDATE_VALUE:
+      return {
+        ...state,
+        input: action.payload
+      };
     default:
       return state;
   }
 };
 
-export default fieldReducer
+export default fieldReducer;

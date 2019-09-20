@@ -7,6 +7,7 @@ import InputField from "../InputField";
 import History from "../../components/History";
 import EmergencyButton from "../../components/EmergencyButton";
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 import { slideUp, slideDown, controlSectionActive } from "../../redux/actions";
 import Scheduler from "../../components/Scheduler";
 
@@ -37,6 +38,12 @@ const mapStateToProps = state => {
     ...state
   };
 };
+
+const mapDispatchToProps = dispatch => {
+  return {
+
+  }
+}
 
 const styles = StyleSheet.create({
   container: {

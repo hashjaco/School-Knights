@@ -5,8 +5,8 @@ import {
   setActive,
   setDestination,
   setLocation,
-  changeFieldColors,
-  resetFieldColors
+  resetFieldColors,
+  updateValue
 } from "../../redux/actions";
 
 import { View, StyleSheet, TouchableOpacity, TextInput } from "react-native";
@@ -18,15 +18,19 @@ class InputField extends Component {
   }
 
   onPress = () => {
-    changeFieldColors("#FFF");
+    this.props.setActive();
   };
 
   handleSubmit = value => {
     if (this.props.destination === "") {
-      this.setDestination(value);
+      this.props.setDestination(value);
     } else {
-      this.setLocation(value);
+      this.props.setLocation(value);
     }
+  };
+
+  onChangeText = value => {
+    this.props.updateValue(value)
   };
 
   render() {
@@ -51,6 +55,20 @@ const mapStateToProps = state => {
   return {
     ...state
   };
+};
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(
+    {
+      setActive,
+      setDestination,
+      setLocation,
+      changeFieldColors,
+      resetFieldColors,
+      updateValue
+    },
+    dispatch
+  );
 };
 
 const styles = StyleSheet.create({
@@ -81,11 +99,5 @@ const styles = StyleSheet.create({
 
 export default connect(
   mapStateToProps,
-  {
-    setActive,
-    setDestination,
-    setLocation,
-    changeFieldColors,
-    resetFieldColors
-  }
+  mapDispatchToProps
 )(InputField);

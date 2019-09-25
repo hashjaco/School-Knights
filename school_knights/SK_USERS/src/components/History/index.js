@@ -2,58 +2,75 @@
 
 import React, { Component } from "react";
 import {
-  View,
   StyleSheet,
-  ScrollView,
-  Image,
   TouchableOpacity,
   Dimensions,
-  Text,
   FlatList
 } from "react-native";
-const extractKey = ({ id }) => id;
+import TouchableScale from 'react-native-touchable-scale';
+import { ListItem } from "react-native-elements";
+import { connect } from "react-redux";
+import { setDestination } from "../../redux/actions";
+const extractKey = (item, index) => index.toString();
+const locations = require("../../data/history.json").history;
+const width = Dimensions.get("window").width;
 
 class History extends Component {
   constructor(props) {
     super(props);
   }
-  width = Dimensions.get("window").width;
-  data = this.props.history;
+
+  renderItem = ({ item }) => {
+    return (
+      <ListItem
+        Component={TouchableScale}
+        friction={90}
+        title={item.name}
+        subtitle={item.address}
+        leftAvatar={{rounded: true, source: { uri: item.imageSource} }}
+        containerStyle={{ backgroundColor: 'transparent', marginTop: 25 }}
+        titleStyle={{ color: 'black', fontWeight: 'bold' }}
+        subtitleStyle={{ color: 'black' }}
+      />
+      // {/*<Image*/}
+      // {/*  style={styles.image}*/}
+      // {/*  source={require("../../assets/Home-icon.png")}*/}
+      // {/*/>*/}
+      // {/*<View style={styles.savedAddress}>*/}
+      // {/*  <Text style={styles.label}>{item.name}</Text>*/}
+      // {/*  <Text style={styles.address}>{item.address}</Text>*/}
+      // {/*</View>*/}
+    );
+  };
+
   render() {
     return (
-      <>
-        <FlatList
-          horizontal={true}
-          data={this.data}
-          keyExtractor={extractKey}
-          renderItem={this._renderList}
-        />
-      </>
+      <FlatList
+        horizontal={true}
+        data={locations}
+        keyExtractor={extractKey}
+        renderItem={this.renderItem}
+      />
     );
   }
-
-  _renderList = ({ item }) => {
-    // let image = item.imageSource;
-    const locations = require("../../data/history.json").history;
-
-    return locations.map((location, key) => {
-      return (
-        <TouchableOpacity style={styles.fieldStyle} key={key}>
-          <Image
-            style={styles.image}
-            source={require("../../assets/Home-icon.png")}
-          />
-          <View style={styles.savedAddress}>
-            <Text style={styles.label}>{location.name}</Text>
-            <Text style={styles.address}>{location.address}</Text>
-          </View>
-        </TouchableOpacity>
-      );
-    });
-  };
 }
 
-export default History;
+const mapStateToProps = state => {
+  return { ...state };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setDestination: (value) => {
+      dispatch(setDestination(value))
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(History);
 
 const styles = StyleSheet.create({
   fieldStyle: {

@@ -16,18 +16,15 @@ const styles = StyleSheet.create({
   }
 });
 
-class MainScreen extends Component {
-  render() {
-
+const MainScreen = (props) => {
     return (
       <View style={styles.container}>
         <MapSection />
-        <MenuToggle navigation={this.props.navigation}/>
+        <MenuToggle navigation={props.navigation}/>
         <ControlSection />
       </View>
     );
   }
-}
 
 const mapStateToProps = state => ({
   ...state

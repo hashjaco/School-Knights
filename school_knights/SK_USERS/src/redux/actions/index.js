@@ -16,25 +16,26 @@ import {
   CONFIRM_TRIP,
   ACTIVATE_ALARM,
   CHANGE_FIELD_COLORS,
-  GET_DATA,
   UPDATE_VALUE,
   CONFIRM_EMERGENCY,
   TOGGLE_SWITCH,
   GET_HISTORY,
-  MATCH_FOUND
+  MATCH_FOUND,
+  ADD_TO_HISTORY,
+  GET_FIELD_STYLE
 } from "./actionTypes";
 
 export const activateAlarm = values => {
   return { type: ACTIVATE_ALARM, payload: values };
 };
 
-export const getData = values => {
-  return { type: GET_DATA, payload: values };
-};
+export const addToHistory = values => {
+  return { type: ADD_TO_HISTORY, payload: values }
+}
 
 export const getHistory = values => {
-  return { type: GET_HISTORY, payload: values }
-}
+  return { type: GET_HISTORY, payload: values };
+};
 
 export const changeFieldColors = values => {
   return { type: CHANGE_FIELD_COLORS, payload: values };
@@ -72,8 +73,8 @@ export const resetFieldColors = values => {
   return { type: RESET_FIELD_COLORS, payload: values };
 };
 
-export const setActive = values => {
-  return { type: SET_ACTIVE, payload: values };
+export const setActive = () => {
+  return { type: SET_ACTIVE };
 };
 
 export const setDestination = values => {
@@ -88,7 +89,7 @@ export const setPickupTime = values => {
   return { type: SET_PICKUP_TIME, payload: values };
 };
 
-export const setWaiting = values => {
+export const setWaiting = () => {
   return { type: SET_WAITING, payload: values };
 };
 
@@ -110,4 +111,8 @@ export const waitForMatch = () => {
 
 export const scheduleTrip = values => {
   return { type: SCHEDULE_TRIP, payload: values };
+};
+
+export const getFieldStyle = () => {
+  return { type: GET_FIELD_STYLE };
 };

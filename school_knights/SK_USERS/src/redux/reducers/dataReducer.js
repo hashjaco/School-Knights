@@ -1,18 +1,17 @@
 import React from "react";
-import { GET_DATA } from "../actions/actionTypes";
+import { ADD_TO_HISTORY } from "../actions/actionTypes";
 
 // TODO: Will need to modify initialState
 let initialState = {
-  loading: false
+  data: require("../../data/history.json").history
 };
 
 const dataReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_DATA:
+    case ADD_TO_HISTORY:
       return {
         ...state,
-        history: action.data,
-        loading: false
+        data: [ ...state.data, action.payload ]
       };
     default:
       return state;

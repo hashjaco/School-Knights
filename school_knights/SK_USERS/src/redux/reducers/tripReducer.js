@@ -19,7 +19,7 @@ const tripReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_DESTINATION:
       return Object.assign({}, state, {
-        destination: action.data,
+        destination: action.payload,
         destinationSet: true
       });
 

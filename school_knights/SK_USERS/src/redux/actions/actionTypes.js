@@ -55,3 +55,7 @@ export const UPDATE_VALUE = "UPDATE_VALUE";
 export const MATCH_FOUND = "MATCH_FOUND";
 
 export const UPDATE_CURR_LOCATION = "UPDATE_CURR_LOCATION";
+
+export const GET_FIELD_STYLE = "GET_FIELD_STYLE";
+
+export const ADD_TO_HISTORY = "ADD_TO_HISTORY";

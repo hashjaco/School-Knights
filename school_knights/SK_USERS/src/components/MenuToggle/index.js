@@ -8,6 +8,13 @@ class MenuToggle extends Component {
   constructor(props){
     super(props)
   }
+
+  componentDidMount() {
+
+  }
+
+
+
   render() {
     return (
       <Ionicons
@@ -20,7 +27,6 @@ class MenuToggle extends Component {
     );
   }
 }
-
 const onPress = () => {
   this.props.navigation.toggleDrawer();
 };

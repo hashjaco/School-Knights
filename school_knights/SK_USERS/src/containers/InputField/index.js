@@ -9,20 +9,16 @@ import {
   updateValue
 } from "../../redux/actions";
 
-import { View, StyleSheet, TouchableOpacity, TextInput } from "react-native";
+import { StyleSheet, TouchableOpacity, TextInput } from "react-native";
 
 class InputField extends Component {
   constructor(props) {
     super(props);
-    this.onPress = this.onPress.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  onPress = () => {
-    this.props.setActive();
-  };
-
   handleSubmit = value => {
-    if (this.props.destination === "") {
+    if (this.props.destinationSet === false) {
       this.props.setDestination(value);
     } else {
       this.props.setLocation(value);
@@ -30,7 +26,7 @@ class InputField extends Component {
   };
 
   onChangeText = value => {
-    this.props.updateValue(value)
+    this.props.updateValue(value);
   };
 
   render() {
@@ -38,11 +34,10 @@ class InputField extends Component {
       <TouchableOpacity style={styles.fieldStyle}>
         <TextInput
           style={styles.inputStyle}
-          color={this.props.fontColor}
-          placeholder={this.props.placeholder}
-          placeholderColor="#C9B132"
-          value={this.props.value}
-          onPress={this.onPress}
+          color="#000"
+          placeholder="Where to?"
+          placeholderTextColor="#C9B132"
+          value={this.props.input}
           onChangeText={value => this.onChangeText(value)}
           onSubmit={value => this.handleSubmit(value)}
         />
@@ -63,7 +58,6 @@ const mapDispatchToProps = dispatch => {
       setActive,
       setDestination,
       setLocation,
-      changeFieldColors,
       resetFieldColors,
       updateValue
     },

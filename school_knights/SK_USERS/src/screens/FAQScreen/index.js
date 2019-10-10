@@ -7,14 +7,18 @@ import FAQSScreen from "../../components/drawerPages/FAQScreen";
 export default class FAQScreen extends React.Component {
   render() {
     return (
-      <View
-        style={{
-          flex: 1,
-          alignItems: "left",
-        }}
-      >
-        <FAQSScreen />
-      </View>
+      <>
+        <MenuToggle navigation={this.props.navigation}/>
+
+        <View
+          style={{
+            flex: 1,
+            alignItems: "left"
+          }}
+        >
+          <FAQSScreen />
+        </View>
+      </>
     );
   }
 }

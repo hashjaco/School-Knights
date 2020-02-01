@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "school_knights",
+    "password": "school_knights",
+    "database": "school_knights",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "school_knights",
+    "password": null,
+    "database": "school_knights_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}

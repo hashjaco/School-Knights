@@ -5,7 +5,7 @@ let user = process.env.DB_USER;
 let password = process.env.PASS;
 let host = process.env.DB_HOST;
 
-module.exports = new Sequelize(database, user, password, {
+let sequelize = new Sequelize(database, user, password, {
   host: host,
   dialect: "postgres",
   pool: {
@@ -15,3 +15,19 @@ module.exports = new Sequelize(database, user, password, {
     idle: 10000
   }
 });
+
+let models = [
+    'School',
+    'User',
+    'Trip',
+    'Zone'
+];
+
+models.forEach( model => {
+  module.exports[model] = sequelize.import(`${__dirname}/${model}`)
+});
+
+// table relations go here
+((model) => {
+
+})

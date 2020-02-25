@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import DrawerNavigator from "./components/DrawerNavigator2"
 import reducers from "./redux/reducers";
-import { useScreens } from "react-native-screens";
+import { useScreens } from "react-native-views";
 
 export default class App extends Component {
   constructor(props) {

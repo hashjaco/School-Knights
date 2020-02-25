@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import 'react-native-gesture-handler';
 import { Provider } from "react-redux";
 import { bindActionCreators } from "redux";
 import Navigation from "./src/components/DrawerNavigator";
-import { useScreens } from "react-native-screens";
+import { enableScreens } from "react-native-screens";
 import { Asset } from "expo-asset";
 import { AppLoading } from "expo";
 import * as actions from "./src/redux/actions";
@@ -17,7 +18,7 @@ export default class App extends Component {
 
   render() {
     const store = configureStore();
-    useScreens();
+    enableScreens();
     if (!this.state.isReady) {
       return (
         <AppLoading
@@ -27,9 +28,10 @@ export default class App extends Component {
         />
       );
     }
+
     return (
       <Provider store={store}>
-        <Navigation actions={actionCreators} />
+          <Navigation actions={actionCreators}/>
       </Provider>
     );
   }

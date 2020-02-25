@@ -2,279 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b6e41f-451e-4e3c-a809-c5365be96dad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/school-knights-api/config/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-knights-api/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/routes/UserRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-knights-api/src/data/models/lib/Trips.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sequelizerc" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/.sequelizerc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/components/Emergency/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/components/Emergency/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/components/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/components/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/components/Map/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/components/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/components/Menu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/components/RecentAddress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/components/RecentAddress/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/components/Register/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/containers/Background/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/containers/Background/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/containers/Form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/containers/Form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/containers/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/containers/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/containers/Location/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/containers/Location/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/containers/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/containers/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/containers/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/containers/Map/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/containers/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/containers/Menu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/containers/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/containers/Profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/views/FAQ/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/views/FAQ/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/views/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Knights-WEB/views/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-admin/views/Main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.expo-shared/assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.expo-shared/assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.idea/SK_USERS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.idea/SK_USERS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/.watchmanconfig" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/.watchmanconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/assets/EmergencyButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/assets/EmergencyButton.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/assets/Home-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/assets/Home-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/assets/LoadingBasketContents.gif" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/assets/LoadingBasketContents.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/assets/SorrowfulElasticHyracotherium-small.gif" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/assets/SorrowfulElasticHyracotherium-small.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/assets/ajax_loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/assets/ajax_loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/assets/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/assets/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/DrawerNavigator2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/DrawerNavigator2/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/Emergency/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/controllers/KnightController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/EmergencyButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/EmergencyButton/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/History/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/History/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/HistoryList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/HistoryList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/InputFields/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/InputFields/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/Map/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/controllers/SchoolController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/MenuToggle/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/controllers/TripController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/MenuToggle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/MenuToggle/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/RecentAddress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/controllers/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/controllers/ZoneController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/components/Scheduler/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/Scheduler/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/middleware/Authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/config/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/config/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/Background/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/Emergency/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/ControlSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/ControlSection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/Form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/Form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/Menu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/InputField/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/InputField/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/Location/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/RecentAddress/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/Map/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/MapSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/MapSection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/Menu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/Profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/containers/TestLogin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/TestLogin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/data/HistoryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/data/HistoryList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/data/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/data/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/activateAlarm.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/activateAlarm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/changeFieldColors.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/changeFieldColors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/getData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/logIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/logIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/logOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/logOut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/resetFieldColors.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/resetFieldColors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/setActive.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/setActive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/setDestination.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/setDestination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/setLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/setLocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/setPickupTime.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/setPickupTime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/setWaiting.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/setWaiting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/slideDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/slideDown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/actions/slideUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/actions/slideUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/reducers/ControlFieldReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/reducers/ControlFieldReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/reducers/DataReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/reducers/DataReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/reducers/FieldReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/reducers/FieldReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/reducers/FormReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/reducers/FormReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/reducers/InputFieldReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/reducers/InputFieldReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/reducers/TripReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/reducers/TripReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/reducers/UserReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/reducers/UserReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/redux/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/redux/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/Register/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/screens/AccountInformation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/screens/AccountInformation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/screens/ApplyScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/screens/ApplyScreen/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/screens/FAQ/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/screens/FAQ/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/screens/HomeScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/screens/HomeScreen/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/screens/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/screens/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/screens/LogoutScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/screens/LogoutScreen/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/screens/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/screens/Main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/screens/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/screens/Profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/screens/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/screens/Register/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/views/FAQ/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/Background/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/views/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_KNIGHTS/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/.expo-shared/assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/.expo-shared/assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/.watchmanconfig" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/.watchmanconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/Podfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/containers/Location/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/EmergencyButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/Home-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/LoadingBasketContents.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/SchoolKnightLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/SchoolKnightsLogo3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/SorrowfulElasticHyracotherium-small.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/Volsce · SlidesCarnival.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/ajax_loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/cartoon-head-lopper-illustration-cool-wolf-wolf-knight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/clipart-knight-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/knight-cartoon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/assets/wetrumpedall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/AddressField/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/DrawerNavigator/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/EmergencyButton/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/History/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/HistoryList/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/Map/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/MenuToggle/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/components/MenuToggle/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/MenuToggle/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/PersistActiveUserSwitch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/Scheduler/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/drawerPages/Apply.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/drawerPages/DrawerNavigator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/drawerPages/FAQScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/drawerPages/SuccessScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/components/faqHOME/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/views/FAQ/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/containers/ControlSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/containers/Header/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/containers/InputField/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/containers/Login/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/containers/MapSection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/containers/Menu/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/containers/Profile/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/containers/RegistrationForm/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/containers/TestLogin/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/data/HistoryList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/data/history.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/data/users.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/Experimental/Form/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/Experimental/FormikLoginForm/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/Experimental/FormikRegistrationForm/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/Experimental/Litview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/actionTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/activateAlarm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/changeFieldColors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/confirmEmergency.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/confirmTrip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/controlSectionActive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/findMatch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/logIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/logOut.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/resetFieldColors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/scheduleTrip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/setActive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/setDestination.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/setLocation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/setPickupTime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/setWaiting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/slideDown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/slideUp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/toggleMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/updateValue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/user_actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/actions/waitForMatch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/alarmButtonReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/appReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/authorizationReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/controlFieldReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/dataReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/formReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/inputFieldReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/navigationReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/reducerTemplate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/tripReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/redux/reducers/userReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/screens/AccountInformationScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/screens/ApplyScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/screens/FAQScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/screens/HiddenScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/screens/LoginScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/screens/MainScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/screens/ProfileScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/src/screens/RegisterScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK_USERS/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/components/Emergency/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/views/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/views/Main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/components/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/components/Menu/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/components/RecentAddress/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/components/Register/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/containers/Background/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/containers/Form/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/containers/Header/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/containers/Location/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/containers/Login/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/containers/Map/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/containers/Menu/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/containers/Profile/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/views/FAQ/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/views/Login/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users-WEB/views/Main/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bin/www" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/middlewares/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/config/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/middlewares/models/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/middlewares/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/data/models/lib/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/stylesheets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/knights.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/routes/KnightRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/schools.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/routes/SchoolRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/trips.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/routes/TripRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/zones.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/src/apps/api/routes/ZoneRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/error.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/layout.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-knights-api/db/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/db/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-knights-api/db/models/trip.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-api/db/models/trip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-knights-knights/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-knights/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-knights-users/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-knights-users/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-knights-users/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-knights-users/package.json" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -297,9 +34,17 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/school-knights-users/package.json" />
+  </component>
   <component name="ProjectId" id="1TWwRD8jx4mpqeoRBa2mM4maJzV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -323,18 +68,6 @@
       <recent name="$PROJECT_DIR$/school-knights-api/src/data" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -353,6 +86,9 @@
       <workItem from="1575106972091" duration="4268000" />
       <workItem from="1575152400305" duration="4748000" />
       <workItem from="1575161782044" duration="3478000" />
+      <workItem from="1582165813735" duration="1953000" />
+      <workItem from="1582574690449" duration="475000" />
+      <workItem from="1582585402900" duration="13547000" />
     </task>
     <servers />
   </component>
@@ -371,5 +107,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="368" y="191" width="703" height="518" key="find.popup" timestamp="1582595861780">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="368" y="191" width="703" height="518" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1582595861780" />
   </component>
 </project>

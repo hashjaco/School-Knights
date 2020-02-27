@@ -8,7 +8,7 @@ export class Faqs extends Component {
       <>
         <View style={styles.container}>
           <View style={styles.top}>
-            <Text style={styles.title}>FAQ</Text>
+           <Text style={styles.title}>FAQ</Text>
           </View>
 
           {/*}     <View style={styles.center}></View> */}
@@ -60,10 +60,11 @@ const styles = StyleSheet.create({
     // marginTop: 100
   },
   title: {
+    
     fontSize: 60,
     marginLeft: 25,
     fontWeight: "bold",
-    color: "white"
+    color: "Pink"
   },
 
   bottom: {

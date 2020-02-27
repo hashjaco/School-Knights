@@ -11,7 +11,7 @@ class PersistActiveUserSwitch extends Component {
   render() {
     return (
       <View style={{ flex: 1, flexDirection: "column", left: 20 }}>
-          <Text style={{marginBottom: 10}}>Stay Logged In?</Text>
+          <Text style={{marginBottom: 10}}>Keep Me Signed In</Text>
           <Switch
               value={false}
               onValueChange={value => {

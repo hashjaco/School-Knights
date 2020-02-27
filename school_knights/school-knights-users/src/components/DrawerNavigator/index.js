@@ -18,7 +18,7 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigator = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Login" drawerWidth={WIDTH * 0.83}>
+      <Drawer.Navigator initialRouteName="FAQ" drawerWidth={WIDTH * 0.83}>
         <Drawer.Screen
           name="Login"
           component={Login}

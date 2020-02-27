@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "school_knights",
+    "password": "school_knights",
+    "database": "school_knights",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "school_knights",
+    "password": "school_knights",
+    "database": "school_knights_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "school_knights",
+    "password": "A434kla24ngi5kl2ndf987vhsj4hg389yf89dh349ghs898u345",
+    "database": "school_knights_prod",
+    "host": "",
+    "dialect": "postgres"
+  }
+}

@@ -1,13 +1,21 @@
 "use strict";
-const User = require("./user");
 
 module.exports = (sequelize, DataTypes) => {
   const Trip = sequelize.define(
     "Trip",
     {
+      id: {
+        primaryKey: true,
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+      },
       userId: {
         allowNull: false,
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+          references: {
+            model: "User"
+          }
       },
       knightID: {
         allowNull: false,
@@ -26,11 +34,13 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.DATE
       }
     },
-    {}
+    {
+        freezeTableName: true
+    }
   );
-  Trip.associate = function(models) {
+  Trip.associate = models => {
     // associations can be defined here
-    Trip.belongsToMany(User, { through: "user_trips" });
+    // Trip.belongsToMany(models.users, { through: models.user_trips });
   };
   return Trip;
 };

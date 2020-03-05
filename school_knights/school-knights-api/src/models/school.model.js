@@ -1,26 +1,16 @@
 "use strict";
+
 module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define(
-    "User",
+  const School = sequelize.define(
+    "School",
     {
       id: {
         primaryKey: true,
         allowNull: false,
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
       },
-      firstName: {
-        allowNull: false,
-        type: DataTypes.STRING
-      },
-      lastName: {
-        allowNull: false,
-        type: DataTypes.STRING
-      },
-      email: {
-        allowNull: false,
-        type: DataTypes.STRING
-      },
-      password: {
+      name: {
         allowNull: false,
         type: DataTypes.STRING
       },
@@ -28,15 +18,26 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.STRING
       },
-      phoneNumber: {
+      phone_number: {
         allowNull: false,
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+      },
+      primary_color: {
+        allowNull: false,
+        type: DataTypes.STRING,
+      },
+      secondary_color: {
+        allowNull: false,
+        type: DataTypes.STRING,
       }
     },
-    {}
+    {
+        freezeTableName: true
+    }
   );
-  User.associate = models => {
+  School.associate = models => {
     // associations can be defined here
+
   };
-  return User;
+  return School;
 };

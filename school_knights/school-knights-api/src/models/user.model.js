@@ -1,18 +1,18 @@
-'use strict';
-const { DataTypes } = require('sequelize');
+"use strict";
 
-module.exports = {
-  up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('User', {
+module.exports = (sequelize, DataTypes) => {
+  const User = sequelize.define(
+    "User",
+    {
       id: {
-        allowNull: false,
         primaryKey: true,
+        allowNull: false,
         type: DataTypes.INTEGER,
         autoIncrement: true
       },
       first_name: {
         allowNull: false,
-        type: DataTypes.STRING,
+        type: DataTypes.STRING
       },
       last_name: {
         allowNull: false,
@@ -32,19 +32,14 @@ module.exports = {
       },
       phone_number: {
         allowNull: false,
-        type: DataTypes.STRING,
-      },
-      created_at: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updated_at: {
-        allowNull: false,
-        type: Sequelize.DATE
+        type: DataTypes.STRING
       }
-    });
-  },
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('User');
-  }
+    },
+    {
+      freezeTableName: true
+    }
+  );
+  User.associate = models => {};
+
+  return User;
 };

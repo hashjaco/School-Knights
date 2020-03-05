@@ -1,32 +1,22 @@
 "use strict";
+const times = require("lodash.times");
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert("Users", [
-      {
-        firstName: "John",
-        lastName: "Doe",
-        email: "thedoeman@google.com",
-        password: "dreamon",
-        address: "5432 Connell Ct, Wager, CA, 95468",
-        phoneNumber: "650-210-4636",
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        firstName: "Jack",
-        lastName: "Broganoff",
-        email: "jackrabbit@google.com",
-        password: "dragon",
-        address: "5542 Crayon Ct, Pulley, NJ, 12432",
-        phoneNumber: "650-240-4206",
-        createdAt: new Date(),
-        updatedAt: new Date()
-      }
-    ]);
+    return queryInterface.bulkInsert(
+      "User",
+      times(10, x => ({
+        first_name: faker.name.firstName(),
+        last_name: faker.name.lastName(),
+        address: `${faker.address.streetAddress()} ${faker.address.city()}, ${faker.address.stateAbbr()} ${faker.address.zipCode()}`,
+        email: faker.internet.email(),
+        password: faker.internet.password(),
+        phone_number: faker.phone.phoneNumber()
+      }))
+    );
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete("Users", null, {});
+    return queryInterface.bulkDelete("User", null, {});
   }
 };

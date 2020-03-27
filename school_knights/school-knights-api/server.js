@@ -74,18 +74,6 @@ server.use(function(err, req, res, next) {
 // sync database and insert dummy data to test with
 db.sequelize.sync({ force: true }).then(() => {
   seedUsers(db);
-  //   db.users.bulkCreate(
-  //   times(10, x => ({
-  //     id: x,
-  //     first_name: faker.name.firstName(),
-  //     last_name: faker.name.lastName(),
-  //     address: `${faker.address.streetAddress()} ${faker.address.city()}, ${faker.address.stateAbbr()} ${faker.address.zipCode()}`,
-  //     email: faker.internet.email(),
-  //     password: faker.internet.password(),
-  //     phone_number: faker.phone.phoneNumber()
-  //   }))
-  // );
-  // Start server
   startServer(server, port);
 });
 

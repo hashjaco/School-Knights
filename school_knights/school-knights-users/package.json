@@ -23,7 +23,7 @@
     "expokit": "^36.0.1",
     "formik": "^2.1.4",
     "lodash": "^4.17.15",
-    "native-base": "^2.13.8",
+    "native-base": "~2.13.8",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
     "react": "16.12.0",

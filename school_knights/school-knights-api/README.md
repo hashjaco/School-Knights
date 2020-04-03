@@ -1,68 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-server).
+# Welcome to the School Knights API
+### Before fetching, be sure to install all of the dependencies by running ```npm install``` in the root directory.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project root directory, you can run:
 
 ### `npm start`
+Runs the server<br>
 
-Runs the server in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm run start-dev`
+Runs the server in the development mode with hot reload on changes.<br>
+Open http://localhost:8081/<route url> to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### `npm run test`
+Runs the start-dev script in debug mode<br>
 
-### `npm test`
+## Routes
+###For testing, begin every url with https://localhost:8081
+##### Note: Anything that begins with a colon is a parameter you must include minus the colon.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-server/docs/running-tests) for more information.
+#### Schools
+Root: './schools'
 
-### `npm run build`
+```
+GET
+'/' : Retrieve all schools<br>
+'/:id' : Retrieve school by id
 
-Builds the server for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+POST
+'/create' : Create new school<br>
 
-The build is minified and the filenames include the hashes.<br>
-Your server is ready to be deployed!
+PUT
+'/:id/update' : Update school info
 
-See the section about [deployment](https://facebook.github.io/create-react-server/docs/deployment) for more information.
+DELETE
+'/:id/delete' : Delete school
+```
+#### Users
+Root: '/users'
+```
+GET
+'/' : Retrieve all users<br>
+'/:id' : Retrieve user by id
 
-### `npm run eject`
+POST
+'/create' : Create new user<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+PUT
+'/:id/update' : Update user info
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+DELETE
+'/:id/delete' : Delete user
+```
+#### Zones
+Root: '/zones'
+```
+GET
+'/' : Retrieve all zones<br>
+'/:id' : Retrieve zones by id
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+POST
+'/create' : Create new zones<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+PUT
+'/:id/update' : Update zones info
 
-## Learn More
+DELETE
+'/:id/delete' : Delete zones
+```
+#### **Trips**
+Root: '/trips'
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-server/docs/getting-started).
+```
+GET
+'/' : Retrieve all trips<br>
+'/:id' : Retrieve trip by id
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+POST
+'/create' : Create new trip<br>
 
-### Code Splitting
+PUT
+'/:id/update' : Update trip info
 
-This section has moved here: https://facebook.github.io/create-react-server/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-server/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-server/docs/making-a-progressive-web-server
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-server/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-server/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-server/docs/troubleshooting#npm-run-build-fails-to-minify
+DELETE
+'/:id/delete' : Delete trip
+```
